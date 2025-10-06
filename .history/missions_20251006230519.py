@@ -1,14 +1,26 @@
 def show_title():
-    print("🌌 Exploring God's Magnificent Universe")
-    print("🚀 Cleino's Space Mission Control Center")
-    print("✨ 'The heavens declare the glory of God' - Psalm 19:1")
-    print()
+    print("🚀 Cleino's mission control center!")
 
 
 # Mission variables - accessible from main.py
 mission1 = "perseverance rover - mars exploration"
+number = 1
+print(type(mission1))
+print(type(number))
+print(isinstance(mission1, str))
+      
 mission2 = "james webb space telescope - deep space observation"
+number = 2
+print(type(mission2))
+print(type(number))
+print(isinstance(mission2, str))
+
 mission3 = "voyager 1 - interstellar space"
+number = 3
+print(type(mission3))
+print(type(number))
+print(isinstance(mission3, str))
+
 mission4 = "hubble space telescope - earth orbit observation"
 mission5 = "curiosity rover - mars surface analysis"
 mission6 = "spitzer space telescope - infrared astronomy"

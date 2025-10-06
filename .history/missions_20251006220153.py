@@ -1,8 +1,5 @@
 def show_title():
-    print("🌌 Exploring God's Magnificent Universe")
-    print("🚀 Cleino's Space Mission Control Center")
-    print("✨ 'The heavens declare the glory of God' - Psalm 19:1")
-    print()
+    print("🚀 Cleino's mission control center!")
 
 
 # Mission variables - accessible from main.py
