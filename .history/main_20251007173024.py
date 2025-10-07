@@ -21,7 +21,6 @@ if option == "1":
     launch_year = 2020
     landing_year = 2021
     cost = 2_700_000_000  # 2.7 billion USD
-    
     print(missions.mission1)
     print(f"🔴 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
@@ -41,7 +40,6 @@ elif option == "2":
     orbit_location = "L2 Lagrange Point"
     mirror_size = 6.5  # meters
     cost = 10_000_000_000  # 10 billion USD
-    
     print(missions.mission2)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: Advanced {specialty}")
@@ -61,7 +59,6 @@ elif option == "3":
     launch_year = 1977
     orbit_location = "Interstellar Space"
     cost = 250_000_000  # 250 million USD
-    
     print(missions.mission3)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty}")
@@ -81,7 +78,6 @@ elif option == "4":
     orbit_location = "Low Earth Orbit"
     cost = 10_000_000_000  # 10 billion USD
     service_missions = 5
-    
     print(missions.mission4)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty}")
@@ -103,15 +99,14 @@ elif option == "5":
     launch_year = 2011
     landing_year = 2012
     cost = 2_500_000_000  # 2.5 billion USD
-    
     print(missions.mission5)
     print(f"🔴 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
-    print(f"🎯 Mission: To {purpose} to understand Mars' geology")
+    print(f"🎯 Mission: To {purpose} to understand Mars' geology and climate")
     print(f"🚀 Launched: {launch_year} | 🛬 Landed: {landing_year}")
     print(f"💰 Mission Cost: ${cost:,} USD")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Exploring God's creation on {planet} since {landing_year}!")
+    print(f"🌟 Exploring God's magnificent creation on {planet} since {landing_year}!")
 
 elif option == "6":
     # Spitzer details
@@ -123,7 +118,6 @@ elif option == "6":
     orbit_location = "Heliocentric Orbit"
     mirror_size = 0.85  # meters
     cost = 720_000_000  # 720 million USD
-    
     print(missions.mission6)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: Advanced {specialty}")
@@ -132,7 +126,7 @@ elif option == "6":
     print(f"🚀 Launched: {launch_year}")
     print(f"💰 Total Cost: ${cost:,} USD")
     print(f"🤝 Built by: {partners}")
-    print(f"✨ Revealing God's universe wonders since {launch_year}!")
+    print(f"✨ Revealing the wonders of God's universe since {launch_year}!")
 
 elif option == "7":
     # Cassini-Huygens details
@@ -145,17 +139,14 @@ elif option == "7":
     arrival_year = 2004
     end_year = 2017
     cost = 3_900_000_000  # 3.9 billion USD
-    
     print(missions.mission7)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
     print(f"🎯 Primary Mission: To {purpose} and analyze Saturn's rings")
-    print(f"🚀 Launched: {launch_year} | Arrived: {arrival_year}")
-    print(f"Ended: {end_year}")
+    print(f"🚀 Launched: {launch_year} | Arrived: {arrival_year} | Ended: {end_year}")
     print(f"💰 Mission Cost: ${cost:,} USD")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Exploring God's creation on {planet} from "
-          f"{arrival_year} to {end_year}!")
+    print(f"🌟 Exploring God's creation on {planet} from {arrival_year} to {end_year}!")
 
 elif option == "8":
     # New Horizons details
@@ -167,17 +158,14 @@ elif option == "8":
     launch_year = 2006
     arrival_year = 2015
     cost = 700_000_000  # 700 million USD
-    
     print(missions.mission8)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
-    print(f"🎯 Primary Mission: To {purpose}")
-    print("and gather data on these distant objects")
+    print(f"🎯 Primary Mission: To {purpose} and gather data on these distant objects")
     print(f"🚀 Launched: {launch_year} | Arrived: {arrival_year}")
     print(f"💰 Mission Cost: ${cost:,} USD")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Exploring God's creation in the outer solar system "
-          f"since {arrival_year}!")
+    print(f"🌟 Exploring God's magnificent creation in the outer solar system since {arrival_year}!")
 
 elif option == "9":
     # Galileo details
@@ -190,18 +178,14 @@ elif option == "9":
     arrival_year = 1995
     end_year = 2003
     cost = 1_600_000_000  # 1.6 billion USD
-    
     print(missions.mission9)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
-    print(f"🎯 Primary Mission: To {purpose}")
-    print("and analyze its atmosphere and magnetosphere")
-    print(f"🚀 Launched: {launch_year} | Arrived: {arrival_year}")
-    print(f"Ended: {end_year}")
+    print(f"🎯 Primary Mission: To {purpose} and analyze its atmosphere and magnetosphere")
+    print(f"🚀 Launched: {launch_year} | 🛬 Arrived: {arrival_year} | Ended: {end_year}")
     print(f"💰 Mission Cost: ${cost:,} USD")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Exploring God's creation on {planet} from "
-          f"{arrival_year} to {end_year}!")
+    print(f"🌟 Exploring God's magnificent creation on {planet} from {arrival_year} to {end_year}!")
 
 elif option == "10":
     # Kepler details
@@ -213,7 +197,6 @@ elif option == "10":
     end_year = 2018
     mirror_size = 0.95  # meters
     cost = 600_000_000  # 600 million USD
-    
     print(missions.mission10)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty}")
@@ -222,8 +205,7 @@ elif option == "10":
     print(f"🚀 Launched: {launch_year} | Ended: {end_year}")
     print(f"💰 Total Cost: ${cost:,} USD")
     print(f"🤝 Built by: {partners}")
-    print(f"✨ Discovering new worlds in God's universe from "
-          f"{launch_year} to {end_year}!")
+    print(f"✨ Discovering new worlds in God's universe from {launch_year} to {end_year}!")
 
 elif option == "11":
     # Chandra details
@@ -235,7 +217,6 @@ elif option == "11":
     orbit_location = "High Earth Orbit"
     mirror_size = 1.2  # meters
     cost = 1_600_000_000  # 1.6 billion USD
-    
     print(missions.mission11)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: Advanced {specialty}")
@@ -244,29 +225,26 @@ elif option == "11":
     print(f"🚀 Launched: {launch_year}")
     print(f"💰 Total Cost: ${cost:,} USD")
     print(f"🤝 Built by: {partners}")
-    print(f"✨ Revealing the high-energy universe of God's creation "
-          f"since {launch_year}!")
+    print(f"✨ Revealing the high-energy universe of God's creation since {launch_year}!")
 
 elif option == "12":
     # Juno details
     mission_name = "Juno"
     mission_type = "Orbiter"
     planet = "Jupiter"
-    purpose = "study Jupiter's atmosphere, magnetic field, and structure"
+    purpose = "study Jupiter's atmosphere, magnetic field, and internal structure"
     builder = "Lockheed Martin"
     launch_year = 2011
     arrival_year = 2016
     cost = 1_100_000_000  # 1.1 billion USD
-    
     print(missions.mission12)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
-    print(f"🎯 Primary Mission: To {purpose}")
-    print("and understand its formation and evolution")
-    print(f"🚀 Launched: {launch_year} | Arrived: {arrival_year}")
+    print(f"🎯 Primary Mission: To {purpose} and understand its formation and evolution")
+    print(f"🚀 Launched: {launch_year} | 🛬 Arrived: {arrival_year}")
     print(f"💰 Mission Cost: ${cost:,} USD")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Exploring God's creation on {planet} since {arrival_year}!")
+    print(f"🌟 Exploring God's magnificent creation on {planet} since {arrival_year}!")
 
 elif option == "13":
     # TESS details
@@ -278,7 +256,6 @@ elif option == "13":
     orbit_location = "High Earth Orbit"
     mirror_size = 0.1  # meters
     cost = 337_000_000  # 337 million USD
-    
     print(missions.mission13)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty}")
@@ -300,23 +277,20 @@ elif option == "14":
     arrival_year = 2018
     return_year = 2023
     cost = 800_000_000  # 800 million USD
-    
     print(missions.mission14)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Target Asteroid: {asteroid}")
     print(f"🎯 Primary Mission: To {purpose} for analysis")
-    print(f"🚀 Launched: {launch_year} | Arrived: {arrival_year}")
-    print(f"Returned: {return_year}")
+    print(f"🚀 Launched: {launch_year} | 🛬 Arrived: {arrival_year} | Returned: {return_year}")
     print(f"💰 Mission Cost: ${cost:,} USD")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Exploring God's creation in the asteroid belt "
-          f"since {arrival_year}!")
+    print(f"🌟 Exploring God's magnificent creation in the asteroid belt since {arrival_year}!")
 
 elif option == "15":
     # Dawn details
     mission_name = "Dawn"
     mission_type = "Orbiter"
-    purpose = "study the two largest objects in the asteroid belt"
+    purpose = "study the two largest objects in the asteroid belt, Vesta and Ceres"
     builder = "Orbital ATK"
     launch_year = 2007
     arrival_vesta_year = 2011
@@ -324,20 +298,15 @@ elif option == "15":
     arrival_ceres_year = 2015
     end_year = 2018
     cost = 500_000_000  # 500 million USD
-    
     print(missions.mission15)
     print(f"🪐 {mission_type}: {mission_name}")
-    print(f"🎯 Primary Mission: To {purpose}, Vesta and Ceres")
-    print("and understand their formation and evolution")
-    print(f"🚀 Launched: {launch_year}")
-    print(f"🛬 Arrived at Vesta: {arrival_vesta_year}")
-    print(f"Departed Vesta: {departure_vesta_year}")
-    print(f"🛬 Arrived at Ceres: {arrival_ceres_year}")
+    print(f"🎯 Primary Mission: To {purpose} and understand their formation and evolution")
+    print(f"🚀 Launched: {launch_year} | 🛬 Arrived at Vesta: {arrival_vesta_year}")
+    print(f"Departed Vesta: {departure_vesta_year} | 🛬 Arrived at Ceres: {arrival_ceres_year}")
     print(f"Mission Ended: {end_year}")
     print(f"💰 Mission Cost: ${cost:,} USD")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Exploring God's creation in asteroid belt from "
-          f"{arrival_vesta_year} to {end_year}!")
+    print(f"🌟 Exploring God's magnificent creation in the asteroid belt from {arrival_vesta_year} to {end_year}!")
 
 elif option == "16":
     # SpaceX Starship details
@@ -347,11 +316,9 @@ elif option == "16":
     builder = "SpaceX"
     launch_year = 2023  # First test flight year
     cost = "TBD"  # Cost is still to be determined
-    
     print(missions.mission16)
     print(f"🚀 {mission_type}: {mission_name}")
-    print(f"🎯 Primary Mission: To {purpose}")
-    print("and revolutionize space travel")
+    print(f"🎯 Primary Mission: To {purpose} and revolutionize space travel")
     print(f"🚀 First Test Flight: {launch_year}")
     print(f"💰 Estimated Cost: {cost}")
     print(f"🏭 Built by: {builder}")
@@ -365,15 +332,13 @@ elif option == "17":
     builder = "Blue Origin"
     launch_year = 2015  # First test flight year
     cost = "TBD"  # Cost is still to be determined
-    
     print(missions.mission17)
     print(f"🚀 {mission_type}: {mission_name}")
-    print(f"🎯 Primary Mission: To {purpose}")
-    print("and provide commercial space tourism")
+    print(f"🎯 Primary Mission: To {purpose} and provide commercial space tourism")
     print(f"🚀 First Test Flight: {launch_year}")
     print(f"💰 Estimated Cost: {cost}")
     print(f"🏭 Built by: {builder}")
-    print("🌟 Offering a glimpse of God's creation from space!")
+    print("🌟 Offering a glimpse of God's creation from the edge of space!")
 
 elif option == "18":
     # Ariane 5 details
@@ -384,11 +349,9 @@ elif option == "18":
     launch_year = 1996  # First flight year
     cost_per_launch = 165_000_000  # 165 million USD per launch
     total_launches = 111  # Total launches as of 2023
-    
     print(missions.mission18)
     print(f"🚀 {mission_type}: {mission_name}")
-    print(f"🎯 Primary Mission: To {purpose}")
-    print("for commercial and government clients")
+    print(f"🎯 Primary Mission: To {purpose} for commercial and government clients")
     print(f"🚀 First Flight: {launch_year}")
     print(f"💰 Cost per Launch: ${cost_per_launch:,} USD")
     print(f"📊 Total Launches: {total_launches} as of 2023")
@@ -399,43 +362,37 @@ elif option == "19":
     # Soyuz details
     mission_name = "Soyuz"
     mission_type = "Crewed Spacecraft"
-    purpose = "transport astronauts to and from the ISS"
+    purpose = "transport astronauts to and from the International Space Station"
     builder = "Roscosmos"
     first_flight_year = 1967
     total_missions = 140  # Total crewed missions as of 2023
     cost_per_mission = 90_000_000  # 90 million USD per mission
-    
     print(missions.mission19)
     print(f"🚀 {mission_type}: {mission_name}")
-    print(f"🎯 Primary Mission: To {purpose}")
-    print("and ensure safe crew transport")
+    print(f"🎯 Primary Mission: To {purpose} and ensure safe crew transport")
     print(f"🚀 First Flight: {first_flight_year}")
     print(f"💰 Cost per Mission: ${cost_per_mission:,} USD")
     print(f"📊 Total Crewed Missions: {total_missions} as of 2023")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Safely transporting astronauts in God's creation "
-          f"since {first_flight_year}!")
+    print(f"🌟 Safely transporting astronauts in God's creation since {first_flight_year}!")
 
 elif option == "20":
     # Falcon 9 details
     mission_name = "Falcon 9"
     mission_type = "Reusable Rocket"
-    purpose = "deliver payloads to orbit and return to Earth"
+    purpose = "deliver payloads to orbit and return to Earth for refurbishment and reuse"
     builder = "SpaceX"
     first_flight_year = 2010
     total_launches = 200  # Total launches as of 2023
     cost_per_launch = 62_000_000  # 62 million USD per launch
-    
     print(missions.mission20)
     print(f"🚀 {mission_type}: {mission_name}")
-    print(f"🎯 Primary Mission: To {purpose}")
-    print("for refurbishment and reuse, revolutionizing space access")
+    print(f"🎯 Primary Mission: To {purpose} and revolutionize space access")
     print(f"🚀 First Flight: {first_flight_year}")
     print(f"💰 Cost per Launch: ${cost_per_launch:,} USD")
     print(f"📊 Total Launches: {total_launches} as of 2023")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Making space more accessible in God's creation "
-          f"since {first_flight_year}!")
+    print(f"🌟 Making space more accessible in God's creation since {first_flight_year}!")
 
 elif option == "21":
     # Atlas V details
@@ -446,17 +403,14 @@ elif option == "21":
     first_flight_year = 2002
     total_launches = 87  # Total launches as of 2023
     cost_per_launch = 109_000_000  # 109 million USD per launch
-    
     print(missions.mission21)
     print(f"🚀 {mission_type}: {mission_name}")
-    print(f"🎯 Primary Mission: To {purpose}")
-    print("for commercial, government, and military clients")
+    print(f"🎯 Primary Mission: To {purpose} for commercial, government, and military clients")
     print(f"🚀 First Flight: {first_flight_year}")
     print(f"💰 Cost per Launch: ${cost_per_launch:,} USD")
     print(f"📊 Total Launches: {total_launches} as of 2023")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Delivering payloads into God's orbit "
-          f"since {first_flight_year}!")
+    print(f"🌟 Delivering payloads into God's orbit since {first_flight_year}!")
 
 elif option == "22":
     # Delta IV details
@@ -467,17 +421,14 @@ elif option == "22":
     first_flight_year = 2002
     total_launches = 43  # Total launches as of 2023
     cost_per_launch = 164_000_000  # 164 million USD per launch
-    
     print(missions.mission22)
     print(f"🚀 {mission_type}: {mission_name}")
-    print(f"🎯 Primary Mission: To {purpose}")
-    print("for government and military clients")
+    print(f"🎯 Primary Mission: To {purpose} for government and military clients")
     print(f"🚀 First Flight: {first_flight_year}")
     print(f"💰 Cost per Launch: ${cost_per_launch:,} USD")
     print(f"📊 Total Launches: {total_launches} as of 2023")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Delivering heavy payloads into God's orbit "
-          f"since {first_flight_year}!")
+    print(f"🌟 Delivering heavy payloads into God's orbit since {first_flight_year}!")
 
 elif option == "23":
     # SLS details
@@ -487,36 +438,30 @@ elif option == "23":
     purpose = "enable human exploration beyond low Earth orbit"
     builder = "NASA and Boeing"
     first_flight_year = 2022  # First test flight year
-    cost_per_launch = 2_000_000_000  # 2 billion USD per launch
-    
+    cost_per_launch = 2_000_000_000  # 2 billion USD per launch (estimated)
     print(missions.mission23)
     print(f"🚀 {mission_type}: {mission_name}")
-    print(f"🎯 Primary Mission: To {purpose}")
-    print(f"and support Artemis missions to the {mission_location}")
+    print(f"🎯 Primary Mission: To {purpose} and support Artemis missions to the {mission_location}")
     print(f"🚀 First Test Flight: {first_flight_year}")
     print(f"💰 Estimated Cost per Launch: ${cost_per_launch:,} USD")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 The {mission_name} is the most powerful rocket "
-          "ever built by humans!")
+    print(f"🌟 The {mission_name} is the most powerful rocket ever built by humans!")
 
 elif option == "24":
     # Crew Dragon details
     mission_name = "Crew Dragon"
     mission_type = "Crewed Spacecraft"
-    purpose = "transport astronauts to and from the ISS"
+    purpose = "transport astronauts to and from the International Space Station"
     builder = "SpaceX"
     first_flight_year = 2020  # First crewed flight year
-    cost_per_mission = 55_000_000  # 55 million USD per mission
-    
+    cost_per_mission = 55_000_000  # 55 million USD per mission (estimated)
     print(missions.mission24)
     print(f"🚀 {mission_type}: {mission_name}")
-    print(f"🎯 Primary Mission: To {purpose}")
-    print("and ensure safe crew transport")
+    print(f"🎯 Primary Mission: To {purpose} and ensure safe crew transport")
     print(f"🚀 First Crewed Flight: {first_flight_year}")
     print(f"💰 Estimated Cost per Mission: ${cost_per_mission:,} USD")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Safely transporting astronauts in God's creation "
-          f"since {first_flight_year}!")
+    print(f"🌟 Safely transporting astronauts in God's creation since {first_flight_year}!")
 
 elif option == "25":
     # Starlink details
@@ -527,18 +472,14 @@ elif option == "25":
     launch_year = 2019  # First satellite launch year
     total_satellites = 4000  # Total satellites launched as of 2023
     cost = 10_000_000_000  # 10 billion USD (estimated total cost)
-    
     print(missions.mission25)
     print(f"🛰️ {mission_type}: {mission_name}")
-    print(f"🎯 Primary Mission: To {purpose}")
-    print("and connect underserved areas")
+    print(f"🎯 Primary Mission: To {purpose} and connect underserved areas")
     print(f"🚀 First Satellite Launch: {launch_year}")
     print(f"💰 Estimated Total Cost: ${cost:,} USD")
     print(f"📊 Total Satellites Launched: {total_satellites} as of 2023")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Bringing internet access to all corners of "
-          f"God's creation since {launch_year}!")
+    print(f"🌟 Bringing internet access to all corners of God's creation since {launch_year}!")
 
 else:
     print("Invalid option. Please select a number between 1 and 25.")
-    exit()
