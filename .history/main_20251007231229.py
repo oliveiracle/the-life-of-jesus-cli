@@ -448,7 +448,7 @@ elif option == "18":
     total_launches = 111  # Total launches as of 2023
     horsepower = 2_200_000  # 2.2 million pounds of thrust
     size = "171 feet tall"
-    reliability = "95% success rate"
+    reliability = "95% success rate"    
     
     print(missions.mission18)
     print(f"🚀 {mission_type}: {mission_name}")

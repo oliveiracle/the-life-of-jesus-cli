@@ -422,7 +422,7 @@ elif option == "17":
     launch_year = 2015  # First test flight year
     cost = "TBD"  # Cost is still to be determined
     horsepower = 110_000  # 110,000 pounds of thrust
-    reusable = True
+    reusable = True 
     reliability = "100% success rate in its last 15 flights"
     
     print(missions.mission17)
@@ -448,7 +448,7 @@ elif option == "18":
     total_launches = 111  # Total launches as of 2023
     horsepower = 2_200_000  # 2.2 million pounds of thrust
     size = "171 feet tall"
-    reliability = "95% success rate"
+    reliability = "95% success rate"    
     
     print(missions.mission18)
     print(f"🚀 {mission_type}: {mission_name}")

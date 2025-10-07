@@ -237,7 +237,7 @@ elif option == "10":
     mirror_size = 0.95  # meters
     cost = 600_000_000  # 600 million USD
     current_situation = ("retired in 2018 after discovering thousands "
-                         "of exoplanets")
+                        "of exoplanets")
     
     print(missions.mission10)
     print(f"🔭 {mission_type}: {mission_name}")
@@ -315,8 +315,8 @@ elif option == "13":
     cost = 337_000_000  # 337 million USD
     current_situation = "actively discovering new exoplanets"
     size = "13.2 feet tall"
-    weight = 1_200  # pounds
-    mirror_count = 4
+    weight = 1_200  # pounds    
+    mirror_count = 4    
     
     print(missions.mission13)
     print(f"🔭 {mission_type}: {mission_name}")
@@ -422,7 +422,7 @@ elif option == "17":
     launch_year = 2015  # First test flight year
     cost = "TBD"  # Cost is still to be determined
     horsepower = 110_000  # 110,000 pounds of thrust
-    reusable = True
+    reusable = True 
     reliability = "100% success rate in its last 15 flights"
     
     print(missions.mission17)
@@ -448,7 +448,7 @@ elif option == "18":
     total_launches = 111  # Total launches as of 2023
     horsepower = 2_200_000  # 2.2 million pounds of thrust
     size = "171 feet tall"
-    reliability = "95% success rate"
+    reliability = "95% success rate"    
     
     print(missions.mission18)
     print(f"🚀 {mission_type}: {mission_name}")
