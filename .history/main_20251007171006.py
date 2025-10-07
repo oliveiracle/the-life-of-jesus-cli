@@ -358,8 +358,7 @@ elif option == "19":
     print(f"💰 Cost per Mission: ${cost_per_mission:,} USD")
     print(f"📊 Total Crewed Missions: {total_missions} as of 2023")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Safely transporting astronauts in God's creation since {first_flight_year}!")
-    
+    print(f"🌟 Safely transporting astronauts in God's creation since {first_flight_year}!"
 elif option == "20":
     # Falcon 9 details
     mission_name = "Falcon 9"
