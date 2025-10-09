@@ -31,7 +31,7 @@ if option == "1":
     cost = 2_700_000_000  # 2.7 billion USD
     location = "Jezero Crater"
     current_situation = "actively exploring and sending data back to Earth"
-    current_situation_formatted = current_situation.capitalize()
+    current_situation_formatted = current_situation.capitalize()  
     
     print(missions.mission1)
     print(f"🔴 {mission_type}: {mission_name}")
@@ -40,7 +40,7 @@ if option == "1":
     print(f"🚀 Launched: {launch_year} | 🛬 Landed: {landing_year}")
     print(f"💰 Cost: ${cost:,} USD")
     print(f"📌 Current Location: {location}")
-    print(f"📡 Current Status: {current_situation_formatted}")
+    print(f"📡 Current Status: {current_situation_formatted}") 
     print(f"🏭 Built by: {builder}")
     print(f"🌟 Exploring God's creation on {planet} since {landing_year}!")
 
@@ -49,32 +49,33 @@ elif option == "2":
     mission_name = "James Webb Space Telescope"
     mission_type = "Space Telescope"
     specialty = "infrared observations"
-    specialty_formatted = specialty.capitalize()  # "Infrared Observations"
+    specialty_formated = specialty.capitalize()  # "Infrared Observations"
     launch_year = 2021
     orbit_location = "L2 Lagrange Point"
     mirror_size = 6.5  # meters
     cost = 10_000_000_000  # 10 billion USD
     current_situation = "operational and sending stunning images"
     partners = "NASA, ESA, and CSA"
-    partners_formatted = partners.replace(", ", " | ")
+    partners_formatted = partners.replace(", ", " | ")#
     
     print(missions.mission2)
     print(f"🔭 {mission_type}: {mission_name}")
-    print(f"🌌 Specialty: Advanced {specialty_formatted}")
+    print(f"🌌 Specialty: Advanced {specialty_formated}")
     print(f"🪞 Primary Mirror: {mirror_size}m diameter")
     print(f"📍 Operating Location: {orbit_location}")
     print(f"🚀 Launched: {launch_year}")
     print(f"💰 Total Cost: ${cost:,} USD")
     print(f"📡 Current Status: {current_situation}")
-    print(f"🤝 International Partnership: {partners_formatted}")
+    print(f"🤝 International Partnership: {partners_formatted}") # .replace() applied here
     print(f"✨ Revealing the wonders of God's universe since {launch_year}!")
+    
 
 elif option == "3":
     # Voyager 1 details
     mission_name = "Voyager 1"
     mission_type = "Space Probe"
     specialty = "interstellar exploration"
-    specialty_formatted = specialty.capitalize()  # "Interstellar Exploration"
+    specialty_formated = specialty.capitalize()  # "Interstellar Exploration"
     partners = "NASA"
     launch_year = 1977
     orbit_location = "Interstellar Space"
@@ -83,7 +84,7 @@ elif option == "3":
     
     print(missions.mission3)
     print(f"🚀 {mission_type}: {mission_name}")
-    print(f"🌌 Specialty: {specialty_formatted}")
+    print(f"🌌 Specialty: {specialty_formated}")
     print(f"📍 Current Location: {orbit_location}")
     print(f"🚀 Launched: {launch_year}")
     print(f"💰 Mission Cost: ${cost:,} USD")
@@ -96,7 +97,7 @@ elif option == "4":
     mission_name = "Hubble Space Telescope"
     mission_type = "Space Telescope"
     specialty = "high-resolution imaging"
-    specialty_formatted = specialty.capitalize()  # "High-resolution Imaging"
+    specialty_formated = specialty.capitalize()  # "High-resolution Imaging"
     partners = "NASA and ESA"
     launch_year = 1990
     orbit_location = "Low Earth Orbit"
@@ -106,7 +107,7 @@ elif option == "4":
     
     print(missions.mission4)
     print(f"🔭 {mission_type}: {mission_name}")
-    print(f"🌌 Specialty: {specialty_formatted}")
+    print(f"🌌 Specialty: {specialty_formated}") #
     print(f"📍 Operating Location: {orbit_location}")
     print(f"🚀 Launched: {launch_year}")
     print(f"💰 Total Cost: ${cost:,} USD")
@@ -145,7 +146,6 @@ elif option == "6":
     mission_name = "Spitzer Space Telescope"
     mission_type = "Space Telescope"
     specialty = "infrared observations"
-    specialty_formatted = specialty.capitalize()  # "Infrared Observations"
     partners = "NASA and JPL"
     launch_year = 2003
     orbit_location = "Heliocentric Orbit"
@@ -156,7 +156,7 @@ elif option == "6":
     
     print(missions.mission6)
     print(f"🔭 {mission_type}: {mission_name}")
-    print(f"🌌 Specialty: Advanced {specialty_formatted}")
+    print(f"🌌 Specialty: Advanced {specialty}")
     print(f"🪞 Primary Mirror: {mirror_size}m diameter")
     print(f"📍 Operating Location: {orbit_location}")
     print(f"🚀 Launched: {launch_year}")
@@ -226,7 +226,6 @@ elif option == "9":
     end_year = 2003
     cost = 1_600_000_000  # 1.6 billion USD
     current_situation = "mission ended in 2003 after 14 years of service"
-    current_situation_formatted = current_situation.capitalize()
     
     print(missions.mission9)
     print(f"🪐 {mission_type}: {mission_name}")
@@ -237,7 +236,7 @@ elif option == "9":
     print(f"Ended: {end_year}")
     print(f"💰 Mission Cost: ${cost:,} USD")
     print(f"🏭 Built by: {builder}")
-    print(f"📡 Current Status: {current_situation_formatted}")
+    print(f"📡 Current Status: {current_situation}")
     print(f"🌟 Exploring God's creation on {planet} from "
           f"{arrival_year} to {end_year}!")
 
@@ -246,7 +245,6 @@ elif option == "10":
     mission_name = "Kepler Space Telescope"
     mission_type = "Space Telescope"
     specialty = "exoplanet discovery"
-    specialty_formatted = specialty.capitalize()  # "Exoplanet Discovery"
     partners = "NASA and JPL"
     launch_year = 2009
     end_year = 2018
@@ -254,17 +252,16 @@ elif option == "10":
     cost = 600_000_000  # 600 million USD
     current_situation = ("retired in 2018 after discovering thousands "
                          "of exoplanets")
-    current_situation_formatted = current_situation.capitalize()
     
     print(missions.mission10)
     print(f"🔭 {mission_type}: {mission_name}")
-    print(f"🌌 Specialty: {specialty_formatted}")
+    print(f"🌌 Specialty: {specialty}")
     print(f"🪞 Primary Mirror: {mirror_size}m diameter")
     print("📍 Operating Location: Earth-trailing heliocentric orbit")
     print(f"🚀 Launched: {launch_year} | Ended: {end_year}")
     print(f"💰 Total Cost: ${cost:,} USD")
     print(f"🤝 Built by: {partners}")
-    print(f"📡 Current Status: {current_situation_formatted}")
+    print(f"📡 Current Status: {current_situation}")
     print(f"✨ Discovering new worlds in God's universe from "
           f"{launch_year} to {end_year}!")
 
@@ -279,7 +276,6 @@ elif option == "11":
     mirror_size = 1.2  # meters
     cost = 1_600_000_000  # 1.6 billion USD
     current_situation = "still operational and capturing high-energy phenomena"
-    current_situation_formatted = current_situation.capitalize()
     
     print(missions.mission11)
     print(f"🔭 {mission_type}: {mission_name}")
@@ -289,7 +285,7 @@ elif option == "11":
     print(f"🚀 Launched: {launch_year}")
     print(f"💰 Total Cost: ${cost:,} USD")
     print(f"🤝 Built by: {partners}")
-    print(f"📡 Current Status: {current_situation_formatted}")
+    print(f"📡 Current Status: {current_situation}")
     print(f"✨ Revealing the high-energy universe of God's creation "
           f"since {launch_year}!")
 
@@ -304,7 +300,6 @@ elif option == "12":
     arrival_year = 2016
     cost = 1_100_000_000  # 1.1 billion USD
     current_situation = "actively orbiting and sending data back to Earth"
-    current_situation_formatted = current_situation.capitalize()
     size = "20 feet tall"
     weight = 3_600  # pounds
     solar_panels_span = 66  # feet
@@ -318,7 +313,7 @@ elif option == "12":
     print(f"💰 Mission Cost: ${cost:,} USD")
     print(f"📏 Size: {size} | Weight: {weight} pounds")
     print(f"📐 Solar Panel Span: {solar_panels_span} feet")
-    print(f"📡 Current Status: {current_situation_formatted}")
+    print(f"📡 Current Status: {current_situation}")
     print(f"🏭 Built by: {builder}")
     print(f"🌟 Exploring God's creation on {planet} since {arrival_year}!")
 
@@ -333,7 +328,6 @@ elif option == "13":
     mirror_size = 0.1  # meters
     cost = 337_000_000  # 337 million USD
     current_situation = "actively discovering new exoplanets"
-    current_situation_formatted = current_situation.capitalize()
     size = "13.2 feet tall"
     weight = 1_200  # pounds
     mirror_count = 4
@@ -347,7 +341,7 @@ elif option == "13":
     print(f"💰 Total Cost: ${cost:,} USD")
     print(f"📏 Size: {size} | Weight: {weight} pounds")
     print(f"🔍 Number of Mirrors: {mirror_count}")
-    print(f"📡 Current Status: {current_situation_formatted}")
+    print(f"📡 Current Status: {current_situation}")
     print(f"🤝 Built by: {partners}")
     print(f"✨ Discovering new worlds in God's universe since {launch_year}!")
 
@@ -357,7 +351,6 @@ elif option == "14":
     mission_type = "Sample Return Mission"
     asteroid = "Bennu"
     purpose = "collect samples from the asteroid and return them to Earth"
-    purpose_formatted = purpose.capitalize()  # .capitalize()
     builder = "Lockheed Martin"
     launch_year = 2016
     arrival_year = 2018
@@ -369,7 +362,7 @@ elif option == "14":
     print(missions.mission14)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Target Asteroid: {asteroid}")
-    print(f"🎯 Primary Mission: {purpose_formatted} for analysis")
+    print(f"🎯 Primary Mission: To {purpose} for analysis")
     print(f"🚀 Launched: {launch_year} | Arrived: {arrival_year}")
     print(f"Returned: {return_year}")
     print(f"💰 Mission Cost: ${cost:,} USD")
