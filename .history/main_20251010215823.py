@@ -9,20 +9,14 @@ print("16-SpaceX Starship | 17-Blue Origin | 18-Ariane 5 | 19-Soyuz")
 print("20-Falcon 9 | 21-Atlas V | 22-Delta IV | 23-SLS")
 print("24-Crew Dragon | 25-Starlink")
 
-# Accept quit in any format
+# NOVO - aceitar quit em qualquer formato
 user_input = input("Enter your choice (1-25): ")
-option = user_input.strip()  # Remove whitespace
+option = user_input.strip()  # Remove espaços em branco
 
-# Use .lower() to accept 'QUIT', 'Quit', etc.
+# .lower() para aceitar 'QUIT', 'Quit', etc.
 if option.lower() == 'quit' or option.lower() == 'q':
     print("👋 Thanks for exploring space missions!")
     print("🌟 Keep learning about God's amazing universe!")
-    exit()
-    
-# String comparison and input validation
-if not option.isdigit() or int(option) < 1 or int(option) > 25:
-    print(f"❌ '{option}' is not a valid mission number!")
-    print("💡 Please choose a number between 1 and 25, or type 'quit' to exit.")
     exit()
 
 if option == "1":
@@ -110,12 +104,6 @@ elif option == "4":
     service_missions = 5
     current_situation = "still operational and capturing breathtaking images"
     
-    # Mirror comparison with other famous telescopes
-    hubble_mirror_size = 2.4  # meters
-    spitzer_mirror_size = 0.85  # meters
-    james_webb_mirror_size = 6.5  # meters
-    chandra_mirror_size = 1.2  # meters
-    
     print(missions.mission4)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty_formatted}")
@@ -127,25 +115,6 @@ elif option == "4":
     print(f"🏭 Built by: {partners}")
     print(f"📡 Current Status: {current_situation}")
     print(f"✨ Unveiling the beauty of God's universe since {launch_year}!")
-    
-    # Using comparison operators
-    print(f"🔍 Hubble Mirror Size: {hubble_mirror_size}m diameter")
-    print(f"🔍 Spitzer Mirror Size: {spitzer_mirror_size}m diameter")
-    print(f"🔍 Chandra Mirror Size: {chandra_mirror_size}m diameter")
-    print(f"🔍 James Webb Mirror Size: {james_webb_mirror_size}m diameter")
-    
-    # Size comparison logic
-    if hubble_mirror_size > spitzer_mirror_size:
-        print(f"📏 Hubble's mirror is larger than Spitzer's by "
-              f"{hubble_mirror_size - spitzer_mirror_size:.2f}m")
-    elif hubble_mirror_size > chandra_mirror_size:
-        print(f"📏 Hubble's mirror is larger than Chandra's by "
-              f"{hubble_mirror_size - chandra_mirror_size:.2f}m")
-    elif hubble_mirror_size < james_webb_mirror_size:
-        print(f"📏 Hubble's mirror is smaller than James Webb's by "
-              f"{james_webb_mirror_size - hubble_mirror_size:.2f}m")   
-    else:
-        print("📏 Hubble's mirror size is unique among these telescopes.")
 
 elif option == "5":
     # Curiosity details
@@ -581,18 +550,12 @@ elif option == "21":
     builder = "United Launch Alliance (ULA)"
     first_flight_year = 2002
     total_launches = 87  # Total launches as of 2023
+    cost_per_launch = 109_000_000  # 109 million USD per launch
     horsepower = 940_000  # 940,000 pounds of thrust
     size = "191 feet tall"
     reliability = "100% success rate in its last 29 launches"
     bigger_than_falcon_heavy = False
     bigger_than_sls = False
-    
-    # Using comparison operators
-    cost_per_launch = 109_000_000  # 109 million USD per launch
-    ariane5_cost_per_launch = 165_000_000  # 165 million USD per launch
-    sls_cost_per_launch = 2_000_000_000  # 2 billion USD per launch
-    falcon_cost_per_launch = 62_000_000  # 62 million USD per launch
-    delta_iv_cost_per_launch = 164_000_000  # 164 million USD per launch
 
     print(missions.mission21)
     print(f"🚀 {mission_type}: {mission_name}")
@@ -608,22 +571,6 @@ elif option == "21":
     print(f"🔍 Is it bigger than SLS? {bigger_than_sls}")
     print(f"🌟 Delivering payloads into God's orbit "
           f"since {first_flight_year}!")
-    
-    # Cost comparison with other rockets
-    if ariane5_cost_per_launch < sls_cost_per_launch:
-        print(f"📏 SLS is way more expensive than Ariane 5 by "
-              f"${sls_cost_per_launch - ariane5_cost_per_launch:,} USD")
-    if ariane5_cost_per_launch > falcon_cost_per_launch:
-        print(f"📏 Ariane 5 is more expensive than Falcon 9 by "
-              f"${ariane5_cost_per_launch - falcon_cost_per_launch:,} USD")
-    elif ariane5_cost_per_launch > delta_iv_cost_per_launch:
-        print(f"📏 Ariane 5 is more expensive than Delta IV by "
-              f"${ariane5_cost_per_launch - delta_iv_cost_per_launch:,} USD")
-    elif sls_cost_per_launch > falcon_cost_per_launch:
-        print(f"📏 SLS is way more expensive than Falcon 9 by "
-              f"${sls_cost_per_launch - falcon_cost_per_launch:,} USD")
-    else:
-        print("📏 Ariane 5's cost per launch is unique among these rockets.")
 
 elif option == "22":
     # Delta IV details
@@ -666,11 +613,6 @@ elif option == "23":
     horsepower = 8_800_000  # 8.8 million pounds of thrust
     size = "322 feet tall"
     bigger_than_falcon_heavy = True
-    
-    # Rocket height comparisons (in feet)
-    delta_iv_height = 235      # Delta IV
-    sls_height = 322           # SLS (already defined above)
-    falcon_heavy_height = 229  # Falcon Heavy (real data)
 
     print(missions.mission23)
     print(f"🚀 {mission_type}: {mission_name}")
@@ -684,15 +626,6 @@ elif option == "23":
     print(f"🔍 Bigger than Falcon Heavy: {bigger_than_falcon_heavy}")
     print(f"🌟 The {mission_name} is the most powerful rocket "
           "ever built by humans!")
-    
-    # Height comparison with other heavy rockets
-    print(f"📏 Delta IV Height: {delta_iv_height} feet")
-    print(f"🔍 Compared to SLS ({sls_height} feet): "
-          f"{delta_iv_height - sls_height:+d} feet")
-    print(f"🔍 Compared to Falcon Heavy ({falcon_heavy_height} feet): "
-          f"{delta_iv_height - falcon_heavy_height:+d} feet")
-    print(f"🌟 Delivering heavy payloads into God's orbit "
-          f"since {first_flight_year}!")
 
 elif option == "24":
     # Crew Dragon details
@@ -737,6 +670,8 @@ elif option == "25":
     print(f"🛰️ Total Satellites in Orbit: {number_of_satellites_orbit}")
     print(f"🌟 Bringing internet access to all corners of "
           f"God's creation since {launch_year}!")
+
+
 
 else:
     print("Invalid option. Please select a number between 1 and 25.")

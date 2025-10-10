@@ -9,11 +9,11 @@ print("16-SpaceX Starship | 17-Blue Origin | 18-Ariane 5 | 19-Soyuz")
 print("20-Falcon 9 | 21-Atlas V | 22-Delta IV | 23-SLS")
 print("24-Crew Dragon | 25-Starlink")
 
-# Accept quit in any format
+# NEW - accept quit in any format
 user_input = input("Enter your choice (1-25): ")
 option = user_input.strip()  # Remove whitespace
 
-# Use .lower() to accept 'QUIT', 'Quit', etc.
+# .lower() to accept 'QUIT', 'Quit', etc.
 if option.lower() == 'quit' or option.lower() == 'q':
     print("👋 Thanks for exploring space missions!")
     print("🌟 Keep learning about God's amazing universe!")
@@ -128,13 +128,13 @@ elif option == "4":
     print(f"📡 Current Status: {current_situation}")
     print(f"✨ Unveiling the beauty of God's universe since {launch_year}!")
     
-    # Using comparison operators
+    # Using Comparators 
     print(f"🔍 Hubble Mirror Size: {hubble_mirror_size}m diameter")
     print(f"🔍 Spitzer Mirror Size: {spitzer_mirror_size}m diameter")
     print(f"🔍 Chandra Mirror Size: {chandra_mirror_size}m diameter")
     print(f"🔍 James Webb Mirror Size: {james_webb_mirror_size}m diameter")
     
-    # Size comparison logic
+    # Bigger or Smaller?
     if hubble_mirror_size > spitzer_mirror_size:
         print(f"📏 Hubble's mirror is larger than Spitzer's by "
               f"{hubble_mirror_size - spitzer_mirror_size:.2f}m")
@@ -580,19 +580,11 @@ elif option == "21":
     purpose = "deliver payloads to a variety of orbits"
     builder = "United Launch Alliance (ULA)"
     first_flight_year = 2002
-    total_launches = 87  # Total launches as of 2023
-    horsepower = 940_000  # 940,000 pounds of thrust
+    total_launches = 87
+    cost_per_launch = 109_000_000
+    horsepower = 940_000
     size = "191 feet tall"
     reliability = "100% success rate in its last 29 launches"
-    bigger_than_falcon_heavy = False
-    bigger_than_sls = False
-    
-    # Using comparison operators
-    cost_per_launch = 109_000_000  # 109 million USD per launch
-    ariane5_cost_per_launch = 165_000_000  # 165 million USD per launch
-    sls_cost_per_launch = 2_000_000_000  # 2 billion USD per launch
-    falcon_cost_per_launch = 62_000_000  # 62 million USD per launch
-    delta_iv_cost_per_launch = 164_000_000  # 164 million USD per launch
 
     print(missions.mission21)
     print(f"🚀 {mission_type}: {mission_name}")
@@ -604,26 +596,8 @@ elif option == "21":
     print(f"🏭 Built by: {builder}")
     print(f"💪 Thrust: {horsepower:,} pounds")
     print(f"📏 Size: {size}")
-    print(f"🔍 Is it bigger than Falcon Heavy? {bigger_than_falcon_heavy}")
-    print(f"🔍 Is it bigger than SLS? {bigger_than_sls}")
-    print(f"🌟 Delivering payloads into God's orbit "
-          f"since {first_flight_year}!")
-    
-    # Cost comparison with other rockets
-    if ariane5_cost_per_launch < sls_cost_per_launch:
-        print(f"📏 SLS is way more expensive than Ariane 5 by "
-              f"${sls_cost_per_launch - ariane5_cost_per_launch:,} USD")
-    if ariane5_cost_per_launch > falcon_cost_per_launch:
-        print(f"📏 Ariane 5 is more expensive than Falcon 9 by "
-              f"${ariane5_cost_per_launch - falcon_cost_per_launch:,} USD")
-    elif ariane5_cost_per_launch > delta_iv_cost_per_launch:
-        print(f"📏 Ariane 5 is more expensive than Delta IV by "
-              f"${ariane5_cost_per_launch - delta_iv_cost_per_launch:,} USD")
-    elif sls_cost_per_launch > falcon_cost_per_launch:
-        print(f"📏 SLS is way more expensive than Falcon 9 by "
-              f"${sls_cost_per_launch - falcon_cost_per_launch:,} USD")
-    else:
-        print("📏 Ariane 5's cost per launch is unique among these rockets.")
+    print(f"📈 Reliability: {reliability}")
+    print(f"🌟 Delivering payloads into God's orbit since {first_flight_year}!")
 
 elif option == "22":
     # Delta IV details
@@ -632,12 +606,14 @@ elif option == "22":
     purpose = "deliver large payloads to orbit"
     builder = "United Launch Alliance (ULA)"
     first_flight_year = 2002
-    total_launches = 43  # Total launches as of 2023
-    cost_per_launch = 164_000_000  # 164 million USD per launch
-    horsepower = 2_100_000  # 2.1 million pounds of thrust
-    size = "235 feet tall"
-    bigger_than_sls = False
-    bigger_than_falcon_heavy = True
+    total_launches = 43
+    cost_per_launch = 164_000_000
+    horsepower = 2_100_000
+    
+    # TAMANHOS (em pés):
+    delta_iv_height = 235
+    sls_height = 322
+    falcon_heavy_height = 229
 
     print(missions.mission22)
     print(f"🚀 {mission_type}: {mission_name}")
@@ -648,11 +624,10 @@ elif option == "22":
     print(f"📊 Total Launches: {total_launches} as of 2023")
     print(f"🏭 Built by: {builder}")
     print(f"💪 Thrust: {horsepower:,} pounds")
-    print(f"📏 Size: {size}")
-    print(f"🔍 Is it bigger than Falcon Heavy? {bigger_than_falcon_heavy}")
-    print(f"🔍 Is it bigger than SLS? {bigger_than_sls}")
-    print(f"🌟 Delivering heavy payloads into God's orbit "
-          f"since {first_flight_year}!")
+    print(f"📏 Delta IV Height: {delta_iv_height} feet")
+    print(f"🔍 Compared to SLS ({sls_height} feet): {delta_iv_height - sls_height:+d} feet")
+    print(f"🔍 Compared to Falcon Heavy ({falcon_heavy_height} feet): {delta_iv_height - falcon_heavy_height:+d} feet")
+    print(f"🌟 Delivering heavy payloads into God's orbit since {first_flight_year}!")
 
 elif option == "23":
     # SLS details
@@ -661,16 +636,13 @@ elif option == "23":
     mission_type = "Heavy-Lift Launch Vehicle"
     purpose = "enable human exploration beyond low Earth orbit"
     builder = "NASA and Boeing"
-    first_flight_year = 2022  # First test flight year
-    cost_per_launch = 2_000_000_000  # 2 billion USD per launch
-    horsepower = 8_800_000  # 8.8 million pounds of thrust
-    size = "322 feet tall"
-    bigger_than_falcon_heavy = True
+    first_flight_year = 2022
+    cost_per_launch = 2_000_000_000
+    horsepower = 8_800_000
+    sls_height = 322
     
-    # Rocket height comparisons (in feet)
-    delta_iv_height = 235      # Delta IV
-    sls_height = 322           # SLS (already defined above)
-    falcon_heavy_height = 229  # Falcon Heavy (real data)
+    delta_iv_height = 235
+    falcon_heavy_height = 229
 
     print(missions.mission23)
     print(f"🚀 {mission_type}: {mission_name}")
@@ -680,19 +652,10 @@ elif option == "23":
     print(f"💰 Estimated Cost per Launch: ${cost_per_launch:,} USD")
     print(f"🏭 Built by: {builder}")
     print(f"💪 Thrust: {horsepower:,} pounds")
-    print(f"📏 Size: {size}")
-    print(f"🔍 Bigger than Falcon Heavy: {bigger_than_falcon_heavy}")
-    print(f"🌟 The {mission_name} is the most powerful rocket "
-          "ever built by humans!")
-    
-    # Height comparison with other heavy rockets
-    print(f"📏 Delta IV Height: {delta_iv_height} feet")
-    print(f"🔍 Compared to SLS ({sls_height} feet): "
-          f"{delta_iv_height - sls_height:+d} feet")
-    print(f"🔍 Compared to Falcon Heavy ({falcon_heavy_height} feet): "
-          f"{delta_iv_height - falcon_heavy_height:+d} feet")
-    print(f"🌟 Delivering heavy payloads into God's orbit "
-          f"since {first_flight_year}!")
+    print(f"📏 SLS Height: {sls_height} feet")
+    print(f"🔍 Compared to Delta IV ({delta_iv_height} feet): {sls_height - delta_iv_height:+d} feet")
+    print(f"🔍 Compared to Falcon Heavy ({falcon_heavy_height} feet): {sls_height - falcon_heavy_height:+d} feet")
+    print(f"🌟 The most powerful rocket ever built by humans!")
 
 elif option == "24":
     # Crew Dragon details
@@ -700,8 +663,8 @@ elif option == "24":
     mission_type = "Crewed Spacecraft"
     purpose = "transport astronauts to and from the ISS"
     builder = "SpaceX"
-    first_flight_year = 2020  # First crewed flight year
-    cost_per_mission = 55_000_000  # 55 million USD per mission
+    first_flight_year = 2020
+    cost_per_mission = 55_000_000
 
     print(missions.mission24)
     print(f"🚀 {mission_type}: {mission_name}")
@@ -710,8 +673,7 @@ elif option == "24":
     print(f"🚀 First Crewed Flight: {first_flight_year}")
     print(f"💰 Estimated Cost per Mission: ${cost_per_mission:,} USD")
     print(f"🏭 Built by: {builder}")
-    print(f"🌟 Safely transporting astronauts in God's creation "
-          f"since {first_flight_year}!")
+    print(f"🌟 Safely transporting astronauts in God's creation since {first_flight_year}!")
 
 elif option == "25":
     # Starlink details
@@ -719,11 +681,11 @@ elif option == "25":
     mission_type = "Satellite Constellation"
     purpose = "provide global internet coverage"
     builder = "SpaceX"
-    launch_year = 2019  # First satellite launch year
-    total_satellites = 4000  # Total satellites launched as of 2023
-    cost = 10_000_000_000  # 10 billion USD (estimated total cost)
-    number_of_launches = 60  # Total launches as of 2023
-    number_of_satellites_orbit = 4000  # Total satellites in orbit as of 2023
+    launch_year = 2019
+    total_satellites = 4000
+    cost = 10_000_000_000
+    number_of_launches = 60
+    number_of_satellites_orbit = 4000
 
     print(missions.mission25)
     print(f"🛰️ {mission_type}: {mission_name}")
@@ -735,8 +697,7 @@ elif option == "25":
     print(f"🏭 Built by: {builder}")
     print(f"📡 Total Launches: {number_of_launches} as of 2023")
     print(f"🛰️ Total Satellites in Orbit: {number_of_satellites_orbit}")
-    print(f"🌟 Bringing internet access to all corners of "
-          f"God's creation since {launch_year}!")
+    print(f"🌟 Bringing internet access to all corners of God's creation since {launch_year}!")
 
 else:
     print("Invalid option. Please select a number between 1 and 25.")
