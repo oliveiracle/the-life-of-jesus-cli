@@ -18,6 +18,7 @@ if option.lower() == 'quit' or option.lower() == 'q':
     print("👋 Thanks for exploring space missions!")
     print("🌟 Keep learning about God's amazing universe!")
     exit()
+    
 
 if option == "1":
     # Perseverance details
@@ -240,9 +241,9 @@ elif option == "9":
     print(f"💰 Mission Cost: ${cost:,} USD")
     print(f"🏭 Built by: {builder}")
     print(f"📡 Current Status: {current_situation_formatted}")
-    print(f"🤝 International Partnership: {partners_formatted}")
     print(f"🌟 Exploring God's creation on {planet} from "
           f"{arrival_year} to {end_year}!")
+    print(f"🤝 International Partnership: {partners_formatted}")
 
 elif option == "10":
     # Kepler details
@@ -331,7 +332,6 @@ elif option == "13":
     mission_type = "Space Telescope"
     specialty = "exoplanet discovery"
     partners = "NASA, MIT, and Harvard"
-    partners_formatted = partners.replace(", ", " | ")
     launch_year = 2018
     orbit_location = "High Earth Orbit"
     mirror_size = 0.1  # meters
@@ -341,7 +341,8 @@ elif option == "13":
     size = "13.2 feet tall"
     weight = 1_200  # pounds
     mirror_count = 4
-
+    
+    
     print(missions.mission13)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty}")
@@ -352,7 +353,7 @@ elif option == "13":
     print(f"📏 Size: {size} | Weight: {weight} pounds")
     print(f"🔍 Number of Mirrors: {mirror_count}")
     print(f"📡 Current Status: {current_situation_formatted}")
-    print(f"🤝 Built by: {partners_formatted}")
+    print(f"🤝 Built by: {partners}")
     print(f"✨ Discovering new worlds in God's universe since {launch_year}!")
 
 elif option == "14":
@@ -369,7 +370,7 @@ elif option == "14":
     cost = 800_000_000  # 800 million USD
     current_situation = "sample capsule returned to Earth in 2023"
     orbit_location = "Near-Earth Asteroid"
-
+    
     print(missions.mission14)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Target Asteroid: {asteroid}")
@@ -396,7 +397,7 @@ elif option == "15":
     end_year = 2018
     cost = 500_000_000  # 500 million USD
     current_situation = "mission ended in 2018 after running out of fuel"
-
+    
     print(missions.mission15)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}, Vesta and Ceres")
@@ -424,7 +425,7 @@ elif option == "16":
     capacity = "100+ tons to LEO"
     payload = "100+ people"
     reliability = "In development"
-
+    
     print(missions.mission16)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -449,7 +450,7 @@ elif option == "17":
     horsepower = 110_000  # 110,000 pounds of thrust
     reusable = True
     reliability = "100% success rate in its last 15 flights"
-
+    
     print(missions.mission17)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -474,7 +475,7 @@ elif option == "18":
     horsepower = 2_200_000  # 2.2 million pounds of thrust
     size = "171 feet tall"
     reliability = "95% success rate"
-
+    
     print(missions.mission18)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -500,7 +501,7 @@ elif option == "19":
     current_situation = "still in use for crewed missions to the ISS"
     size = "49.5 feet tall"
     payload = "7,000 pounds to LEO"
-
+    
     print(missions.mission19)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -527,7 +528,7 @@ elif option == "20":
     horsepower = 1_710_000  # 1.71 million pounds of thrust
     reusable = True
     reliability = "98% success rate"
-
+    
     print(missions.mission20)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -556,7 +557,7 @@ elif option == "21":
     reliability = "100% success rate in its last 29 launches"
     bigger_than_falcon_heavy = False
     bigger_than_sls = False
-
+    
     print(missions.mission21)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -585,7 +586,7 @@ elif option == "22":
     size = "235 feet tall"
     bigger_than_sls = False
     bigger_than_falcon_heavy = True
-
+    
     print(missions.mission22)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -613,7 +614,7 @@ elif option == "23":
     horsepower = 8_800_000  # 8.8 million pounds of thrust
     size = "322 feet tall"
     bigger_than_falcon_heavy = True
-
+    
     print(missions.mission23)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -635,7 +636,7 @@ elif option == "24":
     builder = "SpaceX"
     first_flight_year = 2020  # First crewed flight year
     cost_per_mission = 55_000_000  # 55 million USD per mission
-
+    
     print(missions.mission24)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -657,7 +658,7 @@ elif option == "25":
     cost = 10_000_000_000  # 10 billion USD (estimated total cost)
     number_of_launches = 60  # Total launches as of 2023
     number_of_satellites_orbit = 4000  # Total satellites in orbit as of 2023
-
+    
     print(missions.mission25)
     print(f"🛰️ {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
