@@ -1,5 +1,11 @@
+# ==============================================================================
+# SPACE MISSION MANAGER CLI
+# ==============================================================================
 import missions
 
+# ==============================================================================
+# 1. TÍTULO E MENU PRINCIPAL
+# ==============================================================================
 missions.show_title()
 print("Choose a mission to learn more about:")
 print("1-Perseverance | 2-James Webb | 3-Voyager 1 | 4-Hubble | 5-Curiosity")
@@ -9,7 +15,9 @@ print("16-SpaceX Starship | 17-Blue Origin | 18-Ariane 5 | 19-Soyuz")
 print("20-Falcon 9 | 21-Atlas V | 22-Delta IV | 23-SLS")
 print("24-Crew Dragon | 25-Starlink")
 
-# Accept quit in any format
+# ==============================================================================
+# 2. ENTRADA E VALIDAÇÃO DO USUÁRIO
+# ==============================================================================
 user_input = input("Enter your choice (1-25): ")
 option = user_input.strip()  # Remove whitespace
 
@@ -39,7 +47,7 @@ if option == "1":
     current_situation = "actively exploring and sending data back to Earth"
     current_situation_formatted = current_situation.capitalize()
     
-    print(missions.mission1)
+    print(missions.mission1_formatted)
     print(f"🔴 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
     print(f"🎯 Primary Mission: To {purpose} and analyze Martian geology")
@@ -64,7 +72,7 @@ elif option == "2":
     partners = "NASA, ESA, and CSA"
     partners_formatted = partners.replace(", ", " | ")
     
-    print(missions.mission2)
+    print(missions.mission2_formatted)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: Advanced {specialty_formatted}")
     print(f"🪞 Primary Mirror: {mirror_size}m diameter")
@@ -87,7 +95,7 @@ elif option == "3":
     cost = 250_000_000  # 250 million USD
     current_situation = "still communicating with Earth"
     
-    print(missions.mission3)
+    print(missions.mission3_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty_formatted}")
     print(f"📍 Current Location: {orbit_location}")
@@ -116,7 +124,7 @@ elif option == "4":
     james_webb_mirror_size = 6.5  # meters
     chandra_mirror_size = 1.2  # meters
     
-    print(missions.mission4)
+    print(missions.mission4_formatted)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty_formatted}")
     print(f"📍 Operating Location: {orbit_location}")
@@ -134,18 +142,6 @@ elif option == "4":
     print(f"🔍 Chandra Mirror Size: {chandra_mirror_size}m diameter")
     print(f"🔍 James Webb Mirror Size: {james_webb_mirror_size}m diameter")
     
-    # Size comparison logic
-    if hubble_mirror_size > spitzer_mirror_size:
-        print(f"📏 Hubble's mirror is larger than Spitzer's by "
-              f"{hubble_mirror_size - spitzer_mirror_size:.2f}m")
-    elif hubble_mirror_size > chandra_mirror_size:
-        print(f"📏 Hubble's mirror is larger than Chandra's by "
-              f"{hubble_mirror_size - chandra_mirror_size:.2f}m")
-    elif hubble_mirror_size < james_webb_mirror_size:
-        print(f"📏 Hubble's mirror is smaller than James Webb's by "
-              f"{james_webb_mirror_size - hubble_mirror_size:.2f}m")   
-    else:
-        print("📏 Hubble's mirror size is unique among these telescopes.")
 
 elif option == "5":
     # Curiosity details
@@ -160,7 +156,7 @@ elif option == "5":
     location = "Gale Crater"
     current_situation = "actively exploring and sending data back to Earth"
     
-    print(missions.mission5)
+    print(missions.mission5_formatted)
     print(f"🔴 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
     print(f"🎯 Mission: To {purpose} to understand Mars' geology")
@@ -185,7 +181,7 @@ elif option == "6":
     current_situation = "retired in 2020 after 16 years of service"
     active = False
     
-    print(missions.mission6)
+    print(missions.mission6_formatted)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: Advanced {specialty_formatted}")
     print(f"🪞 Primary Mirror: {mirror_size}m diameter")
@@ -209,7 +205,7 @@ elif option == "7":
     cost = 3_900_000_000  # 3.9 billion USD
     current_situation = "mission ended in 2017 after 13 years of service"
     
-    print(missions.mission7)
+    print(missions.mission7_formatted)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
     print(f"🎯 Primary Mission: To {purpose} and analyze Saturn's rings")
@@ -233,7 +229,7 @@ elif option == "8":
     cost = 700_000_000  # 700 million USD
     current_situation = "still exploring the Kuiper Belt"
     
-    print(missions.mission8)
+    print(missions.mission8_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -261,7 +257,7 @@ elif option == "9":
     partners = "NASA, ESA and Germany's DLR"
     partners_formatted = partners.replace(", ", " | ")
     
-    print(missions.mission9)
+    print(missions.mission9_formatted)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -290,7 +286,7 @@ elif option == "10":
                          "of exoplanets")
     current_situation_formatted = current_situation.capitalize()
     
-    print(missions.mission10)
+    print(missions.mission10_formatted)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty_formatted}")
     print(f"🪞 Primary Mirror: {mirror_size}m diameter")
@@ -315,7 +311,7 @@ elif option == "11":
     current_situation = "still operational and capturing high-energy phenomena"
     current_situation_formatted = current_situation.capitalize()
     
-    print(missions.mission11)
+    print(missions.mission11_formatted)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: Advanced {specialty}")
     print(f"🪞 Primary Mirror: {mirror_size}m diameter")
@@ -343,7 +339,7 @@ elif option == "12":
     weight = 3_600  # pounds
     solar_panels_span = 66  # feet
     
-    print(missions.mission12)
+    print(missions.mission12_formatted)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -373,7 +369,7 @@ elif option == "13":
     weight = 1_200  # pounds
     mirror_count = 4
 
-    print(missions.mission13)
+    print(missions.mission13_formatted)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty}")
     print(f"🪞 Primary Mirror: {mirror_size}m diameter")
@@ -401,7 +397,7 @@ elif option == "14":
     current_situation = "sample capsule returned to Earth in 2023"
     orbit_location = "Near-Earth Asteroid"
 
-    print(missions.mission14)
+    print(missions.mission14_formatted)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Target Asteroid: {asteroid}")
     print(f"🎯 Primary Mission: {purpose_formatted} for analysis")
@@ -428,7 +424,7 @@ elif option == "15":
     cost = 500_000_000  # 500 million USD
     current_situation = "mission ended in 2018 after running out of fuel"
 
-    print(missions.mission15)
+    print(missions.mission15_formatted)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}, Vesta and Ceres")
     print("and understand their formation and evolution")
@@ -456,7 +452,7 @@ elif option == "16":
     payload = "100+ people"
     reliability = "In development"
 
-    print(missions.mission16)
+    print(missions.mission16_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("and revolutionize space travel")
@@ -481,7 +477,7 @@ elif option == "17":
     reusable = True
     reliability = "100% success rate in its last 15 flights"
 
-    print(missions.mission17)
+    print(missions.mission17_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("and provide commercial space tourism")
@@ -506,7 +502,7 @@ elif option == "18":
     size = "171 feet tall"
     reliability = "95% success rate"
 
-    print(missions.mission18)
+    print(missions.mission18_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("for commercial and government clients")
@@ -532,7 +528,7 @@ elif option == "19":
     size = "49.5 feet tall"
     payload = "7,000 pounds to LEO"
 
-    print(missions.mission19)
+    print(missions.mission19_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("and ensure safe crew transport")
@@ -559,7 +555,7 @@ elif option == "20":
     reusable = True
     reliability = "98% success rate"
 
-    print(missions.mission20)
+    print(missions.mission20_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("for refurbishment and reuse, revolutionizing space access")
@@ -594,7 +590,7 @@ elif option == "21":
     falcon_cost_per_launch = 62_000_000  # 62 million USD per launch
     delta_iv_cost_per_launch = 164_000_000  # 164 million USD per launch
 
-    print(missions.mission21)
+    print(missions.mission21_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("for commercial, government, and military clients")
@@ -639,7 +635,7 @@ elif option == "22":
     bigger_than_sls = False
     bigger_than_falcon_heavy = True
 
-    print(missions.mission22)
+    print(missions.mission22_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("for government and military clients")
@@ -672,7 +668,7 @@ elif option == "23":
     sls_height = 322           # SLS (already defined above)
     falcon_heavy_height = 229  # Falcon Heavy (real data)
 
-    print(missions.mission23)
+    print(missions.mission23_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print(f"and support Artemis missions to the {mission_location}")
@@ -703,7 +699,7 @@ elif option == "24":
     first_flight_year = 2020  # First crewed flight year
     cost_per_mission = 55_000_000  # 55 million USD per mission
 
-    print(missions.mission24)
+    print(missions.mission24_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("and ensure safe crew transport")
@@ -725,7 +721,7 @@ elif option == "25":
     number_of_launches = 60  # Total launches as of 2023
     number_of_satellites_orbit = 4000  # Total satellites in orbit as of 2023
 
-    print(missions.mission25)
+    print(missions.mission25_formatted)
     print(f"🛰️ {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("and connect underserved areas")
@@ -741,3 +737,4 @@ elif option == "25":
 else:
     print("Invalid option. Please select a number between 1 and 25.")
     exit()
+
