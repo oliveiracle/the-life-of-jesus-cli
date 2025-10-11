@@ -765,7 +765,7 @@ elif option == "24":
     purpose = "transport astronauts to and from the ISS"
     builder = "SpaceX"
     first_flight_year = 2020  # FIRST CREWED FLIGHT YEAR
-    cost_per_mission = 55_000_000  # 55 MILLION USD PER MISSION
+    cost_per_mission = 55_000_000  # 55 million USD per mission
 
     print(missions.mission24_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
@@ -778,12 +778,12 @@ elif option == "24":
           f"since {first_flight_year}!")
 
 elif option == "25":
-    # STARLINK DETAILS
+    # Starlink details
     mission_name = "Starlink"
     mission_type = "Satellite Constellation"
     purpose = "provide global internet coverage"
     
-    # IN OPERATOR AND NOT IN OPERATOR
+    # In Operator and Not In Operator
     if mission_name in commercial_spacecraft:
         print(f"{mission_name} is one of the commercial spacecraft, "
               "along with Blue Origin New Shepard and Crew Dragon.")
@@ -791,13 +791,13 @@ elif option == "25":
         print(f"{mission_name} is NOT a rover like Perseverance or Curiosity.")
         print("It's a satellite constellation designed for global internet.")
         print("More information below:\n")
-        # MISSION DETAILS
+        # Mission details
     builder = "SpaceX"
-    launch_year = 2019  # FIRST SATELLITE LAUNCH YEAR
-    total_satellites = 4000  # TOTAL SATELLITES LAUNCHED AS OF 2023
-    cost = 10_000_000_000  # 10 BILLION USD (ESTIMATED TOTAL COST)
-    number_of_launches = 60  # TOTAL LAUNCHES AS OF 2023
-    number_of_satellites_orbit = 4000  # TOTAL SATELLITES IN ORBIT AS OF 2023
+    launch_year = 2019  # First satellite launch year
+    total_satellites = 4000  # Total satellites launched as of 2023
+    cost = 10_000_000_000  # 10 billion USD (estimated total cost)
+    number_of_launches = 60  # Total launches as of 2023
+    number_of_satellites_orbit = 4000  # Total satellites in orbit as of 2023
 
     print(missions.mission25_formatted)
     print(f"🛰️ {mission_type}: {mission_name}")
