@@ -295,8 +295,8 @@ elif option == "6":
     location = "Sea of Galilee"
     participants = "Jesus, Simon Peter, Andrew, James, John"
     main_verse = "Matthew 4:19"
-    verse_text = ('"Come, follow me," Jesus said, "and I will send you '
-                  'out to fish for people."')
+    verse_text = ("Come, follow me," Jesus said, "and I will send you "
+                  "out to fish for people.")
     significance = "started the formation of Jesus' core group of followers"
     time_period = "Early in Jesus' ministry"
     disciples_response = ("At once they left their nets and followed him.")
@@ -353,10 +353,7 @@ elif option == "7":
     print("💡 DETAILS OF THE MIRACLE:")
     print(f"   {miracle_details}")
     print()
-    print(
-        "🙏 May we recognize and celebrate Jesus' transformative power "
-        "in our lives!"
-    )
+    print("🙏 May we recognize and celebrate Jesus' transformative power in our lives!")
 
 # MOMENT 8 - HEALING THE PARALYTIC
 elif option == "8":
@@ -371,7 +368,7 @@ elif option == "8":
                   "saying, 'We have never seen anything like this!'")
     significance = "demonstrated Jesus' authority to forgive sins and heal"
     healing_method = ("Lowered through the roof by friends, Jesus "
-                      "forgave his sins and healed him")
+                      "forgave his sins and healed him")    
     crowd_reaction = "Amazed and praised God"
     time_period = "During Jesus' early ministry"
     friends_faith = ("When Jesus saw their faith, he said to the "
@@ -379,7 +376,7 @@ elif option == "8":
 
     print("=" * 70)
     print(f"🍷 {moment_type}: {jesus_moments.moment8_formatted}")
-    print(f"📍 Location: {location}")
+   print(f"📍 Location: {location}")
     print(f"👥 Key People: {participants}")
     print(f"📅 Time: {time_period}")
     print()
@@ -416,9 +413,9 @@ elif option == "9":
                       "'Who is this? Even the wind and the waves obey him!'")
     jesus_rebuke = ("Quiet! Be still!")
     faith_question = ("Why are you so afraid? Do you still have no faith?")
-
+    
     print("=" * 70)
-    print(f"🍷 {moment_type}: {jesus_moments.moment9_formatted}")
+ print(f"🍷 {moment_type}: {jesus_moments.moment9_formatted}")
     print("=" * 70)
     print(f"📍 Location: {location}")
     print(f"👥 Key People: {participants}")
@@ -460,403 +457,9 @@ elif option == "10":
     significance = "demonstrated Jesus' compassion and divine provision"
     time_period = "During Jesus' ministry"
     miracle_details = ("Five loaves and two fish multiplied to feed "
-                       "5000 people")
+                          "5000 people")
     disciples_observation = ("They gathered twelve baskets with the "
-                             "leftovers, showing the abundance of Jesus' "
-                             "provision.")
+                             "leftovers, showing the abundance of Jesus' provision.")
     crowd_reaction = "Amazed and satisfied"
     jesus_compassion = ("Jesus had compassion on the crowd because "
                         "they were like sheep without a shepherd.")
-    
-    print("=" * 70)
-    print(f"🍷 {moment_type}: {jesus_moments.moment10_formatted}")
-    print("=" * 70)
-    print(f"📍 Location: {location}")
-    print(f"👥 Key People: {participants}")
-    print(f"📅 Time: {time_period}")
-    print()
-    print(f"📖 KEY VERSE: {main_verse}")
-    print(f'💬 "{verse_text}"')
-    print()
-    print("🎯 SIGNIFICANCE:")
-    print(f"   This moment {significance}.")
-    print("   Jesus provided abundantly for the physical needs of the crowd.")
-    print()
-    print("💡 MIRACLE DETAILS:")
-    print(f"   {miracle_details}")
-    print()
-    print("💡 DISCIPLES' OBSERVATION:")
-    print(f"   {disciples_observation}")
-    print()
-    print("🙏 May we trust in Jesus' ability to provide for our needs, "
-          "both physical and spiritual!")
-    
-# MOMENT 11 - WALKING ON WATER
-elif option == "11":
-    moment_name = "Jesus Walks on Water"
-    moment_type = "Miracle Over Nature"
-    location = "Sea of Galilee"
-    participants = "Jesus and His disciples"
-    main_verse = "Matthew 14:25-27"
-    verse_text = ("Shortly before dawn Jesus went out to them, "
-                  "walking on the lake. When the disciples saw him "
-                  "walking on the lake, they were terrified. 'It's a "
-                  "ghost,' they said, and cried out in fear. But Jesus "
-                  "immediately said to them: 'Take courage! It is I. Don't "
-                  "be afraid.'")
-    significance = "demonstrated Jesus' authority over nature"
-    time_period = "During Jesus' ministry"
-    disciples_fear = ("They were terrified and cried out in fear, "
-                      "'It's a ghost!'")
-    jesus_words = ("Take courage! It is I. Don't be afraid.")
-    faith_challenge = '"Come," Jesus said.'
-    peter_response = ("Lord, if it's you, tell me to come to you on the "
-                      "water.")
-    peter_walk = ("Then Peter got down out of the boat, walked on the "
-                  "water and came toward Jesus.")
-    peter_doubt = ("But when he saw the wind, he was afraid and, "
-                   "beginning to sink, cried out, 'Lord, save me!'")
-    jesus_save = ("Immediately Jesus reached out his hand and caught him. "
-                  "'You of little faith,' he said, 'why did you doubt?'")
-    disciples_worship = ("Truly you are the Son of God.")
-    
-    print("=" * 70)
-    print(f"🍷 {moment_type}: {jesus_moments.moment11_formatted}")
-    print("=" * 70)
-    print(f"📍 Location: {location}")
-    print(f"👥 Key People: {participants}")
-    print(f"📅 Time: {time_period}")
-    print()
-    print(f"📖 KEY VERSE: {main_verse}")
-    print(f'💬 "{verse_text}"')
-    print()
-    print("🎯 SIGNIFICANCE:")
-    print(f"   This moment {significance}.")
-    print("   Jesus demonstrated His divine power over the natural world.")
-    print()
-    print("💡 DISCIPLES' REACTION:")
-    print(f"   {disciples_fear}")
-    print()
-    print("💡 JESUS' WORDS:")
-    print(f"   {jesus_words}")
-    print()
-    print("💡 FAITH CHALLENGE:")
-    print(f"   {faith_challenge}")
-    print()
-    print("💡 PETER'S RESPONSE:")
-    print(f"   {peter_response}")
-    print()
-    print("💡 PETER WALKS ON WATER:")
-    print(f"   {peter_walk}")
-    print()
-    print("💡 PETER'S DOUBT:")
-    print(f"   {peter_doubt}")
-    print()
-    print("💡 JESUS SAVES PETER:")
-    print(f"   {jesus_save}")
-    print()
-    print("💡 DISCIPLES' WORSHIP:")
-    print(f"   {disciples_worship} - Matthew 14:33")
-    print()
-    print(
-        "🙏 May we have faith to step out of the boat and trust in "
-        "Jesus' power and presence in our lives!"
-    )
-    
-# MOMENT 12 - RAISING LAZARUS
-elif option == "12":
-    moment_name = "Jesus Raises Lazarus from the Dead"
-    moment_type = "Miracle of Resurrection"
-    location = "Bethany, near Jerusalem"
-    participants = "Jesus, Lazarus, Mary, Martha, crowd"
-    main_verse = "John 11:43-44"
-    verse_text = ("When he had said this, Jesus called in a loud voice, "
-                  "'Lazarus, come out!' The dead man came out, his hands and "
-                  "feet wrapped with strips of linen, and a cloth around his "
-                  "face. Jesus said to them, 'Take off the grave clothes and "
-                  "let him go.'")
-    significance = ("demonstrated Jesus' power over death and "
-                    "foreshadowed His own resurrection")
-    time_period = "Shortly before Jesus' final week"
-    miracle_details = ("Lazarus had been dead for four days before "
-                       "Jesus raised him to life")
-    crowd_reaction = "Amazed and believed in Jesus"
-    jesus_emotion = ("Jesus wept, showing His compassion and humanity.")
-    faith_statement = ("I am the resurrection and the life. The one who "
-                       "believes in me will live, even though they die.")
-    martha_response = ("Yes, Lord. I believe that you are the Messiah, "
-                       "the Son of God, who is to come into the world.")
-    mary_response = ("Lord, if you had been here, my brother would not "
-                     "have died.")
-    jesus_consolation = ("Your brother will rise again.")
-    jesus_final_statement = ("I am the resurrection and the life. The "
-                             "one who believes in me will live, even "
-                             "though they die; and whoever lives by "
-                             "believing in me will never die. Do you "
-                             "believe this?")
-    disciples_reaction = ("After this, many of his disciples believed in him.")
-    
-    print("=" * 70)
-    print(f"🍷 {moment_type}: {jesus_moments.moment12_formatted}")
-    print("=" * 70)
-    print(f"📍 Location: {location}")
-    print(f"👥 Key People: {participants}")
-    print(f"📅 Time: {time_period}")
-    print()
-    print(f"📖 KEY VERSE: {main_verse}")
-    print(f'💬 "{verse_text}"')
-    print()
-    print("🎯 SIGNIFICANCE:")
-    print(f"   This moment {significance}.")
-    print("   Jesus demonstrated His divine authority over life and death.")
-    print()
-    print("💡 MIRACLE DETAILS:")
-    print(f"   {miracle_details}")
-    print()
-    print("💡 CROWD'S REACTION:")
-    print(f"   {crowd_reaction}")
-    print()
-    print("💡 JESUS' EMOTION:")
-    print(f"   {jesus_emotion} - John 11:35")
-    print()
-    print("💡 FAITH STATEMENT:")
-    print(f"   {faith_statement} - John 11:25-26")
-    print()
-    print("💡 MARTHA'S RESPONSE:")
-    print(f"   {martha_response} - John 11:27")
-    print()
-    print("💡 MARY'S RESPONSE:")
-    print(f"   {mary_response} - John 11:32")
-    print()
-    print("💡 JESUS' CONSOLATION:")
-    print(f"   {jesus_consolation} - John 11:23")
-    print()
-    print("💡 JESUS' FINAL STATEMENT:")
-    print(f"   {jesus_final_statement} - John 11:25-26")
-    print()
-    print("💡 DISCIPLES' REACTION:")
-    print(f"   {disciples_reaction} - John 11:45")
-    print()
-    print(
-        "🙏 May we believe in Jesus as the resurrection and the life, "
-        "trusting in His power over death!"
-    )
-    
-    
-# MOMENT 13 - HEALING THE BLIND
-elif option == "13":
-    moment_name = "Jesus Heals a Man Born Blind"
-    moment_type = "Miracle of Healing"
-    location = "Jerusalem"
-    participants = "Jesus, the blind man, Pharisees, crowd"
-    main_verse = "John 9:6-7"
-    verse_text = ("After saying this, he spit on the ground, made some "
-                  "mud with the saliva, and put it on the man's eyes. "
-                  "'Go,' he told him, 'wash in the Pool of Siloam' "
-                  "(this word means 'Sent'). So the man went and washed, "
-                  "and came home seeing.")
-    significance = (
-        "demonstrated Jesus' power to give both physical and spiritual sight"
-    )
-    time_period = "During Jesus' ministry"
-    healing_method = ("Made mud with saliva, applied to eyes, "
-                      "instructed to wash in Pool of Siloam")
-    crowd_reaction = "Amazed and questioned Jesus' authority"
-    pharisees_reaction = (
-        "They were divided, some saying he was not "
-        "from God because he did not keep the Sabbath, "
-        "others asking how a sinner could perform such "
-        "signs."
-    )
-    blind_mans_faith = ("One thing I do know. I was blind but now I see!")
-    jesus_spiritual_sight = ("For judgment I have come into this world, "
-                             "so that the blind will see and those who see "
-                             "will become blind.")
-    pharisees_final_reaction = ("They hurled insults at him and said, "
-                                "'You are this fellow's disciple! We are "
-                                "disciples of Moses!'")
-    jesus_final_statement = ("If you were blind, you would not be guilty "
-                             "of sin; but now that you claim you can see, "
-                             "your guilt remains.")
-    disciples_reaction = ("After this, many of his disciples believed in him.")
-
-    print("=" * 70)
-    print(f"🍷 {moment_type}: {jesus_moments.moment13_formatted}")
-    print("=" * 70)
-    print(f"📍 Location: {location}")
-    print(f"👥 Key People: {participants}")
-    print(f"📅 Time: {time_period}")
-    print(f"📖 KEY VERSE: {main_verse}")
-    print(f'💬 "{verse_text}"')
-    print()
-    print("🎯 SIGNIFICANCE:")
-    print(f"   This moment {significance}.")
-    print("   Jesus demonstrated His divine power to heal and give sight.")
-    print()
-    print("💡 HEALING METHOD:")
-    print(f"   {healing_method}")
-    print()
-    print("💡 CROWD'S REACTION:")
-    print(f"   {crowd_reaction}")
-    print()
-    print("💡 PHARISEES' REACTION:")
-    print(f"   {pharisees_final_reaction}")
-    print()
-    print("💡 JESUS' FINAL STATEMENT:")
-    print(f"   {jesus_final_statement}")
-    print()
-    print("💡 DISCIPLES REACTION:")
-    print(f"   {disciples_reaction}")
-    print()
-    print(
-        "🙏 May we have faith to see both physically and spiritually, "
-        "trusting in Jesus."
-    )
-    
-# MOMENT 14 - SERMON ON THE MOUNT
-elif option == "14":
-    moment_name = "The Sermon on the Mount"
-    moment_type = "Profound Teaching"
-    location = "A mountainside in Galilee"
-    participants = "Jesus and His disciples, large crowd"
-    main_verse = "Matthew 5:3-12"
-    verse_text = ("Blessed are the poor in spirit, for theirs is the "
-                  "kingdom of heaven. Blessed are those who mourn, for "
-                  "they will be comforted. Blessed are the meek, for they "
-                  "will inherit the earth. Blessed are those who hunger and "
-                  "thirst for righteousness, for they will be filled. "
-                  "Blessed are the merciful, for they will be shown mercy. "
-                  "Blessed are the pure in heart, for they will see God. "
-                  "Blessed are the peacemakers, for they will be called "
-                  "children of God. Blessed are those who are persecuted "
-                  "because of righteousness, for theirs is the kingdom of "
-                  "heaven. Blessed are you when people insult you, "
-                  "persecute you and falsely say all kinds of evil against "
-                  "you because of me. Rejoice and be glad, because great is "
-                  "your reward in heaven, for in the same way they "
-                  "persecuted the prophets who were before you.")
-    significance = "outlined the values and ethics of the Kingdom of God"
-    time_period = "Early in Jesus' ministry"
-    beatitudes_summary = ("Blessed are the poor in spirit, those who "
-                          "mourn, the meek, those who hunger and thirst "
-                          "for righteousness, the merciful, the pure in "
-                          "heart, the peacemakers, and those persecuted "
-                          "for righteousness.")
-    disciples_reaction = ("When Jesus had finished saying these things, "
-                          "the crowds were amazed at his teaching.")
-    teaching_style = ("He taught with authority, unlike the teachers "
-                      "of the law.")
-    kingdom_values = ("Love your enemies, turn the other cheek, "
-                      "give to the needy, pray in secret, and store up "
-                      "treasures in heaven.")
-    disciples_challenge = ("Be perfect, therefore, as your heavenly "
-                           "Father is perfect.")
-    disciples_response = ("When Jesus had finished saying these things, "
-                          "the crowds were amazed at his teaching.")
-    print("=" * 70)
-    print(f"🍷 {moment_type}: {jesus_moments.moment14_formatted}")
-    print("=" * 70)
-    print(f"📍 Location: {location}")
-    print(f"👥 Key People: {participants}")
-    print(f"📅 Time: {time_period}")
-    print(f"📖 KEY VERSE: {main_verse}")
-    print(f'💬 "{verse_text}"')
-    print()
-    print("🎯 SIGNIFICANCE:")
-    print(f"   This moment {significance}.")
-    print("   Jesus presented a radical new way of living according to "
-          "God's values.")
-    print()
-    print("💡 BEATITUDES SUMMARY:")
-    print(f"   {beatitudes_summary}")
-    print()
-    print("💡 TEACHING STYLE:")
-    print(f"   {teaching_style}")
-    print()
-    print("💡 KINGDOM VALUES:")
-    print(f"   {kingdom_values}")
-    print()
-    print("💡 DISCIPLES' CHALLENGE:")
-    print(f"   {disciples_challenge}")
-    print()
-    print("💡 DISCIPLES' RESPONSE:")
-    print(f"   {disciples_response}")
-    print()
-    print(
-        "🙏 May we live out the teachings of Jesus, embodying the values "
-        "of the Kingdom of God in our daily lives!"
-    )
-
-        
-# MOMENT 15 - PRODIGAL SON
-elif option == "15":
-    moment_name = "The Parable of the Prodigal Son"
-    moment_type = "Profound Teaching"
-    location = "Somewhere in Galilee"
-    participants = "Jesus and His disciples, Pharisees, Crowd"
-    main_verse = "Luke 15:20-24"
-    verse_text = ("But while he was still a long way off, his father "
-                  "saw him and was filled with compassion for him; he ran "
-                  "to his son, threw his arms around him and kissed him. "
-                  "The son said to him, 'Father, I have sinned against "
-                  "heaven and against you. I am no longer worthy to be "
-                  "called your son.' But the father said to his servants, "
-                  "'Quick! Bring the best robe and put it on him. Put a "
-                  "ring on his finger and sandals on his feet. Bring the "
-                  "fattened calf and kill it. Let's have a feast and "
-                  "celebrate. For this son of mine was dead and is alive "
-                  "again; he was lost and is found.' So they began to "
-                  "celebrate.")
-    significance = "illustrated God's boundless grace and forgiveness"
-    time_period = "During Jesus' ministry"
-    parable_summary = ("A younger son squanders his inheritance but is "
-                       "forgiven and welcomed back by his father.")
-    pharisees_reaction = ("The Pharisees and the teachers of the law "
-                          "muttered, 'This man welcomes sinners and eats "
-                          "with them.'")
-    jesus_response = ("It is not the healthy who need a doctor, but "
-                      "the sick. I have not come to call the righteous, "
-                      "but sinners to repentance.")
-    father_character = ("The father represents God, who is loving, "
-                        "forgiving, and eager to restore those who "
-                        "repent.")
-    elder_son_reaction = ("The elder son represents the self-righteous "
-                          "who struggle to accept God's grace for others.")
-    disciples_reaction = ("When Jesus had finished saying these things, "
-                          "the crowds were amazed at his teaching.")
-
-    print("=" * 70)
-    print(f"🍷 {moment_type}: {jesus_moments.moment15_formatted}")
-    print(f"📍 Location: {location}")
-    print(f"👥 Key People: {participants}")
-    print(f"📅 Time: {time_period}")
-    print(f"📖 KEY VERSE: {main_verse}")
-    print(f'💬 "{verse_text}"')
-    print()
-    print("🎯 SIGNIFICANCE:")
-    print(f"   This moment {significance}.")
-    print("   Jesus illustrated the depth of God's love and mercy.")
-    print()
-    print("💡 PARABLE SUMMARY:")
-    print(f"   {parable_summary}")
-    print()
-    print("💡 PHARISEES' REACTION:")
-    print(f"   {pharisees_reaction}")
-    print()
-    print("💡 JESUS' RESPONSE:")
-    print(f"   {jesus_response}")
-    print()
-    print("💡 FATHER'S CHARACTER:")
-    print(f"   {father_character}")
-    print()
-    print("💡 ELDER SON'S REACTION:")
-    print(f"   {elder_son_reaction}")
-    print()
-    print("💡 DISCIPLES' REACTION:")
-    print(f"   {disciples_reaction}")
-    print()
-    print(
-        "🙏 May we embrace God's grace and extend forgiveness to others, "
-        "just as the father in the parable did!"
-    )
-        

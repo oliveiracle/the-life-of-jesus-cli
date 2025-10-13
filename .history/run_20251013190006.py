@@ -708,10 +708,7 @@ elif option == "13":
     print("💡 DISCIPLES REACTION:")
     print(f"   {disciples_reaction}")
     print()
-    print(
-        "🙏 May we have faith to see both physically and spiritually, "
-        "trusting in Jesus."
-    )
+    print("🙏 May we have faith to see both physically and spiritually, trusting in Jesus.")
     
 # MOMENT 14 - SERMON ON THE MOUNT
 elif option == "14":
@@ -743,9 +740,9 @@ elif option == "14":
                           "heart, the peacemakers, and those persecuted "
                           "for righteousness.")
     disciples_reaction = ("When Jesus had finished saying these things, "
-                          "the crowds were amazed at his teaching.")
+                          "the crowds were amazed at his teaching.")    
     teaching_style = ("He taught with authority, unlike the teachers "
-                      "of the law.")
+                      "of the law.")    
     kingdom_values = ("Love your enemies, turn the other cheek, "
                       "give to the needy, pray in secret, and store up "
                       "treasures in heaven.")
@@ -767,7 +764,7 @@ elif option == "14":
     print("   Jesus presented a radical new way of living according to "
           "God's values.")
     print()
-    print("💡 BEATITUDES SUMMARY:")
+    print("💡 BEATITUDES SUMMARY:") 
     print(f"   {beatitudes_summary}")
     print()
     print("💡 TEACHING STYLE:")
@@ -780,12 +777,10 @@ elif option == "14":
     print(f"   {disciples_challenge}")
     print()
     print("💡 DISCIPLES' RESPONSE:")
-    print(f"   {disciples_response}")
+    print(f"   {disciples_response}")   
     print()
-    print(
-        "🙏 May we live out the teachings of Jesus, embodying the values "
-        "of the Kingdom of God in our daily lives!"
-    )
+    print(("🙏 May we live out the teachings of Jesus, embodying the values of the "
+        "Kingdom of God in our daily lives!"))
 
         
 # MOMENT 15 - PRODIGAL SON
@@ -793,7 +788,7 @@ elif option == "15":
     moment_name = "The Parable of the Prodigal Son"
     moment_type = "Profound Teaching"
     location = "Somewhere in Galilee"
-    participants = "Jesus and His disciples, Pharisees, Crowd"
+    participants = "Jesus and His disciples, Pharisees, crowd"
     main_verse = "Luke 15:20-24"
     verse_text = ("But while he was still a long way off, his father "
                   "saw him and was filled with compassion for him; he ran "
@@ -816,12 +811,12 @@ elif option == "15":
                           "with them.'")
     jesus_response = ("It is not the healthy who need a doctor, but "
                       "the sick. I have not come to call the righteous, "
-                      "but sinners to repentance.")
+                      "but sinners to repentance.")     
     father_character = ("The father represents God, who is loving, "
                         "forgiving, and eager to restore those who "
                         "repent.")
     elder_son_reaction = ("The elder son represents the self-righteous "
-                          "who struggle to accept God's grace for others.")
+                         "who struggle to accept God's grace for others.")
     disciples_reaction = ("When Jesus had finished saying these things, "
                           "the crowds were amazed at his teaching.")
 
@@ -837,7 +832,7 @@ elif option == "15":
     print(f"   This moment {significance}.")
     print("   Jesus illustrated the depth of God's love and mercy.")
     print()
-    print("💡 PARABLE SUMMARY:")
+    print("💡 PARABLE SUMMARY:")    
     print(f"   {parable_summary}")
     print()
     print("💡 PHARISEES' REACTION:")
@@ -855,8 +850,7 @@ elif option == "15":
     print("💡 DISCIPLES' REACTION:")
     print(f"   {disciples_reaction}")
     print()
-    print(
-        "🙏 May we embrace God's grace and extend forgiveness to others, "
-        "just as the father in the parable did!"
-    )
+    print(("🙏 May we embrace God's grace and extend forgiveness to others, just as "
+        "the father in the parable did!"))
+        
         

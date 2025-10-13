@@ -793,7 +793,7 @@ elif option == "15":
     moment_name = "The Parable of the Prodigal Son"
     moment_type = "Profound Teaching"
     location = "Somewhere in Galilee"
-    participants = "Jesus and His disciples, Pharisees, Crowd"
+    participants = "Jesus and His disciples, Pharisees, crowd"
     main_verse = "Luke 15:20-24"
     verse_text = ("But while he was still a long way off, his father "
                   "saw him and was filled with compassion for him; he ran "
@@ -859,4 +859,5 @@ elif option == "15":
         "🙏 May we embrace God's grace and extend forgiveness to others, "
         "just as the father in the parable did!"
     )
+        
         

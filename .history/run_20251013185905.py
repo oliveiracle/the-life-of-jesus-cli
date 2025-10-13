@@ -353,10 +353,7 @@ elif option == "7":
     print("💡 DETAILS OF THE MIRACLE:")
     print(f"   {miracle_details}")
     print()
-    print(
-        "🙏 May we recognize and celebrate Jesus' transformative power "
-        "in our lives!"
-    )
+    print("🙏 May we recognize and celebrate Jesus' transformative power in our lives!")
 
 # MOMENT 8 - HEALING THE PARALYTIC
 elif option == "8":
@@ -371,7 +368,7 @@ elif option == "8":
                   "saying, 'We have never seen anything like this!'")
     significance = "demonstrated Jesus' authority to forgive sins and heal"
     healing_method = ("Lowered through the roof by friends, Jesus "
-                      "forgave his sins and healed him")
+                      "forgave his sins and healed him")    
     crowd_reaction = "Amazed and praised God"
     time_period = "During Jesus' early ministry"
     friends_faith = ("When Jesus saw their faith, he said to the "
@@ -460,10 +457,9 @@ elif option == "10":
     significance = "demonstrated Jesus' compassion and divine provision"
     time_period = "During Jesus' ministry"
     miracle_details = ("Five loaves and two fish multiplied to feed "
-                       "5000 people")
+                          "5000 people")
     disciples_observation = ("They gathered twelve baskets with the "
-                             "leftovers, showing the abundance of Jesus' "
-                             "provision.")
+                             "leftovers, showing the abundance of Jesus' provision.")
     crowd_reaction = "Amazed and satisfied"
     jesus_compassion = ("Jesus had compassion on the crowd because "
                         "they were like sheep without a shepherd.")
@@ -510,15 +506,14 @@ elif option == "11":
                       "'It's a ghost!'")
     jesus_words = ("Take courage! It is I. Don't be afraid.")
     faith_challenge = '"Come," Jesus said.'
-    peter_response = ("Lord, if it's you, tell me to come to you on the "
-                      "water.")
+    peter_response = ("Lord, if it's you, tell me to come to you on the water.")
     peter_walk = ("Then Peter got down out of the boat, walked on the "
                   "water and came toward Jesus.")
     peter_doubt = ("But when he saw the wind, he was afraid and, "
                    "beginning to sink, cried out, 'Lord, save me!'")
     jesus_save = ("Immediately Jesus reached out his hand and caught him. "
                   "'You of little faith,' he said, 'why did you doubt?'")
-    disciples_worship = ("Truly you are the Son of God.")
+    disciples_worship = ("Truly you are the Son of God.")       
     
     print("=" * 70)
     print(f"🍷 {moment_type}: {jesus_moments.moment11_formatted}")
@@ -558,10 +553,7 @@ elif option == "11":
     print("💡 DISCIPLES' WORSHIP:")
     print(f"   {disciples_worship} - Matthew 14:33")
     print()
-    print(
-        "🙏 May we have faith to step out of the boat and trust in "
-        "Jesus' power and presence in our lives!"
-    )
+    print("🙏 May we have faith to step out of the boat and trust in Jesus' power and presence in our lives!")
     
 # MOMENT 12 - RAISING LAZARUS
 elif option == "12":
@@ -575,20 +567,19 @@ elif option == "12":
                   "feet wrapped with strips of linen, and a cloth around his "
                   "face. Jesus said to them, 'Take off the grave clothes and "
                   "let him go.'")
-    significance = ("demonstrated Jesus' power over death and "
-                    "foreshadowed His own resurrection")
+    significance = "demonstrated Jesus' power over death and foreshadowed His own resurrection"
     time_period = "Shortly before Jesus' final week"
     miracle_details = ("Lazarus had been dead for four days before "
                        "Jesus raised him to life")
     crowd_reaction = "Amazed and believed in Jesus"
     jesus_emotion = ("Jesus wept, showing His compassion and humanity.")
     faith_statement = ("I am the resurrection and the life. The one who "
-                       "believes in me will live, even though they die.")
+                      "believes in me will live, even though they die.")
     martha_response = ("Yes, Lord. I believe that you are the Messiah, "
                        "the Son of God, who is to come into the world.")
     mary_response = ("Lord, if you had been here, my brother would not "
                      "have died.")
-    jesus_consolation = ("Your brother will rise again.")
+    jesus_consolation = ("Your brother will rise again.")   
     jesus_final_statement = ("I am the resurrection and the life. The "
                              "one who believes in me will live, even "
                              "though they die; and whoever lives by "
@@ -637,15 +628,12 @@ elif option == "12":
     print("💡 DISCIPLES' REACTION:")
     print(f"   {disciples_reaction} - John 11:45")
     print()
-    print(
-        "🙏 May we believe in Jesus as the resurrection and the life, "
-        "trusting in His power over death!"
-    )
+    print("🙏 May we believe in Jesus as the resurrection and the life, trusting in His power over death!")
     
     
 # MOMENT 13 - HEALING THE BLIND
 elif option == "13":
-    moment_name = "Jesus Heals a Man Born Blind"
+    moment_name = "Jesus Heals a Man Born Blind"    
     moment_type = "Miracle of Healing"
     location = "Jerusalem"
     participants = "Jesus, the blind man, Pharisees, crowd"
@@ -655,19 +643,15 @@ elif option == "13":
                   "'Go,' he told him, 'wash in the Pool of Siloam' "
                   "(this word means 'Sent'). So the man went and washed, "
                   "and came home seeing.")
-    significance = (
-        "demonstrated Jesus' power to give both physical and spiritual sight"
-    )
+    significance = "demonstrated Jesus' power to give both physical and spiritual sight"
     time_period = "During Jesus' ministry"
     healing_method = ("Made mud with saliva, applied to eyes, "
                       "instructed to wash in Pool of Siloam")
     crowd_reaction = "Amazed and questioned Jesus' authority"
-    pharisees_reaction = (
-        "They were divided, some saying he was not "
-        "from God because he did not keep the Sabbath, "
-        "others asking how a sinner could perform such "
-        "signs."
-    )
+    pharisees_reaction = ("They were divided, some saying he was not "
+                         "from God because he did not keep the Sabbath, "
+                         "others asking how a sinner could perform such "
+                         "signs.")
     blind_mans_faith = ("One thing I do know. I was blind but now I see!")
     jesus_spiritual_sight = ("For judgment I have come into this world, "
                              "so that the blind will see and those who see "
@@ -678,22 +662,22 @@ elif option == "13":
     jesus_final_statement = ("If you were blind, you would not be guilty "
                              "of sin; but now that you claim you can see, "
                              "your guilt remains.")
-    disciples_reaction = ("After this, many of his disciples believed in him.")
+    disciples_reaction = ("After this, many of his disciples believed in him.")     
 
     print("=" * 70)
     print(f"🍷 {moment_type}: {jesus_moments.moment13_formatted}")
     print("=" * 70)
     print(f"📍 Location: {location}")
     print(f"👥 Key People: {participants}")
-    print(f"📅 Time: {time_period}")
-    print(f"📖 KEY VERSE: {main_verse}")
-    print(f'💬 "{verse_text}"')
+    print(f"📅 Time: {time_period}")        
+    print(f"📖 KEY VERSE: {main_verse}")    
+    print(f'💬 "{verse_text}"') 
     print()
-    print("🎯 SIGNIFICANCE:")
+    print("🎯 SIGNIFICANCE:")   
     print(f"   This moment {significance}.")
     print("   Jesus demonstrated His divine power to heal and give sight.")
     print()
-    print("💡 HEALING METHOD:")
+    print("💡 HEALING METHOD:") 
     print(f"   {healing_method}")
     print()
     print("💡 CROWD'S REACTION:")
@@ -708,10 +692,7 @@ elif option == "13":
     print("💡 DISCIPLES REACTION:")
     print(f"   {disciples_reaction}")
     print()
-    print(
-        "🙏 May we have faith to see both physically and spiritually, "
-        "trusting in Jesus."
-    )
+    print("🙏 May we have faith to see both physically and spiritually, trusting in Jesus.")
     
 # MOMENT 14 - SERMON ON THE MOUNT
 elif option == "14":
@@ -743,9 +724,9 @@ elif option == "14":
                           "heart, the peacemakers, and those persecuted "
                           "for righteousness.")
     disciples_reaction = ("When Jesus had finished saying these things, "
-                          "the crowds were amazed at his teaching.")
+                          "the crowds were amazed at his teaching.")    
     teaching_style = ("He taught with authority, unlike the teachers "
-                      "of the law.")
+                      "of the law.")    
     kingdom_values = ("Love your enemies, turn the other cheek, "
                       "give to the needy, pray in secret, and store up "
                       "treasures in heaven.")
@@ -756,7 +737,7 @@ elif option == "14":
     print("=" * 70)
     print(f"🍷 {moment_type}: {jesus_moments.moment14_formatted}")
     print("=" * 70)
-    print(f"📍 Location: {location}")
+    print(f"📍 Location: {location}")   
     print(f"👥 Key People: {participants}")
     print(f"📅 Time: {time_period}")
     print(f"📖 KEY VERSE: {main_verse}")
@@ -767,7 +748,7 @@ elif option == "14":
     print("   Jesus presented a radical new way of living according to "
           "God's values.")
     print()
-    print("💡 BEATITUDES SUMMARY:")
+    print("💡 BEATITUDES SUMMARY:") 
     print(f"   {beatitudes_summary}")
     print()
     print("💡 TEACHING STYLE:")
@@ -780,12 +761,10 @@ elif option == "14":
     print(f"   {disciples_challenge}")
     print()
     print("💡 DISCIPLES' RESPONSE:")
-    print(f"   {disciples_response}")
+    print(f"   {disciples_response}")   
     print()
-    print(
-        "🙏 May we live out the teachings of Jesus, embodying the values "
-        "of the Kingdom of God in our daily lives!"
-    )
+    print(("🙏 May we live out the teachings of Jesus, embodying the values of the "
+        "Kingdom of God in our daily lives!"))
 
         
 # MOMENT 15 - PRODIGAL SON
@@ -793,7 +772,7 @@ elif option == "15":
     moment_name = "The Parable of the Prodigal Son"
     moment_type = "Profound Teaching"
     location = "Somewhere in Galilee"
-    participants = "Jesus and His disciples, Pharisees, Crowd"
+    participants = "Jesus and His disciples, Pharisees, crowd"
     main_verse = "Luke 15:20-24"
     verse_text = ("But while he was still a long way off, his father "
                   "saw him and was filled with compassion for him; he ran "
@@ -816,12 +795,12 @@ elif option == "15":
                           "with them.'")
     jesus_response = ("It is not the healthy who need a doctor, but "
                       "the sick. I have not come to call the righteous, "
-                      "but sinners to repentance.")
+                      "but sinners to repentance.")     
     father_character = ("The father represents God, who is loving, "
                         "forgiving, and eager to restore those who "
                         "repent.")
     elder_son_reaction = ("The elder son represents the self-righteous "
-                          "who struggle to accept God's grace for others.")
+                         "who struggle to accept God's grace for others.")
     disciples_reaction = ("When Jesus had finished saying these things, "
                           "the crowds were amazed at his teaching.")
 
@@ -837,7 +816,7 @@ elif option == "15":
     print(f"   This moment {significance}.")
     print("   Jesus illustrated the depth of God's love and mercy.")
     print()
-    print("💡 PARABLE SUMMARY:")
+    print("💡 PARABLE SUMMARY:")    
     print(f"   {parable_summary}")
     print()
     print("💡 PHARISEES' REACTION:")
@@ -855,8 +834,7 @@ elif option == "15":
     print("💡 DISCIPLES' REACTION:")
     print(f"   {disciples_reaction}")
     print()
-    print(
-        "🙏 May we embrace God's grace and extend forgiveness to others, "
-        "just as the father in the parable did!"
-    )
+    print(("🙏 May we embrace God's grace and extend forgiveness to others, just as "
+        "the father in the parable did!"))
+        
         
