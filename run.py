@@ -1,5 +1,5 @@
 # ==============================================================================
-# SPACE MISSION MANAGER CLI
+# THE LIFE OF JESUS CHRIST CLI
 # ==============================================================================
 import jesus_moments
 
@@ -7,13 +7,26 @@ import jesus_moments
 # 1. TITLE AND MAIN MENU
 # ==============================================================================
 jesus_moments.show_title()
-print("Choose a mission to learn more about:")
-print("1-Perseverance | 2-James Webb | 3-Voyager 1 | 4-Hubble | 5-Curiosity")
-print("6-Spitzer | 7-Cassini-Huygens | 8-New Horizons | 9-Galileo | 10-Kepler")
-print("11-Chandra | 12-Juno | 13-TESS | 14-OSIRIS-REx | 15-Dawn")
-print("16-SpaceX Starship | 17-Blue Origin | 18-Ariane 5 | 19-Soyuz")
-print("20-Falcon 9 | 21-Atlas V | 22-Delta IV | 23-SLS")
-print("24-Crew Dragon | 25-Starlink")
+print("Explore 25 key moments from the life of Jesus Christ:\n")
+
+print("🌟 BIRTH & CHILDHOOD:")
+print("1-Angel's Announcement | 2-Birth in Bethlehem | 3-Jesus at Temple\n")
+
+print("⚡ BEGINNING OF MINISTRY:")
+print("4-Baptism | 5-Temptation | 6-First Disciples | 7-First Miracle\n")
+
+print("🔥 POWERFUL MIRACLES:")
+print("8-Healing Paralytic | 9-Calming Storm | 10-Feeding 5000")
+print("11-Walking on Water | 12-Raising Lazarus | 13-Healing Blind\n")
+
+print("📖 PROFOUND TEACHINGS:")
+print("14-Sermon on Mount | 15-Prodigal Son | 16-I Am the Way | "
+      "17-Greatest Commandment\n")
+
+print("✝️ FINAL WEEK:")
+print("18-Triumphal Entry | 19-Last Supper | 20-Gethsemane")
+print("21-Trial | 22-Crucifixion | 23-It Is Finished")
+print("24-Resurrection | 25-Ascension\n")
 
 # ==============================================================================
 # 2. USER INPUT AND VALIDATION
