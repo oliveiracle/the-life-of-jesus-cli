@@ -5,6 +5,7 @@
 # in the life of Jesus Christ
 # ==============================================================================
 
+
 def show_title():
     """Display the main title of the application"""
     print("=" * 70)
