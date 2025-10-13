@@ -31,35 +31,74 @@ print("24-Resurrection | 25-Ascension\n")
 # ==============================================================================
 # 2. USER INPUT AND VALIDATION
 # ==============================================================================
-user_input = input("Enter your choice (1-25): ")
-option = user_input.strip()  # REMOVE WHITESPACE
 
-# USE .LOWER() TO ACCEPT 'QUIT', 'QUIT', ETC.
+user_input = input("Enter your choice (1-25) or 'quit' to exit: ")
+option = user_input.strip()
+
+# Handle quit option
 if option.lower() == 'quit' or option.lower() == 'q':
-    print("👋 Thanks for exploring space missions!")
-    print("🌟 Keep learning about God's amazing universe!")
+    print("✝️ Thank you for exploring the life of Jesus!")
+    print("🙏 'I am with you always, to the very end of the age' - Matthew 28:20")
     exit()
-    
-# STRING COMPARISON AND INPUT VALIDATION
+
+# Validate input
 if not option.isdigit() or int(option) < 1 or int(option) > 25:
-    print(f"❌ '{option}' is not a valid mission number!")
+    print(f"❌ '{option}' is not a valid moment number!")
     print("💡 Please choose a number between 1 and 25, or type 'quit' to exit.")
     exit()
 
 # ==============================================================================
-# 3. SPACE MISSIONS CATEGORIZATION (1-25)
+# 3. CATEGORIZING THE 25 MOMENTS OF JESUS' LIFE
 # ==============================================================================
-rovers = ["Perseverance", "Curiosity"]
-space_probes = ["Voyager 1", "New Horizons", "Galileo", "Juno", "Dawn"]
-space_telescopes = ["James Webb", "Hubble", "Spitzer", "Chandra", "Kepler",
-                    "TESS"]
-launch_vehicles = ["Ariane 5", "Soyuz", "Falcon 9", "Atlas V",
-                   "Delta IV Heavy", "SLS"]
-commercial_spacecraft = ["SpaceX Starship", "Blue Origin New Shepard",
-                         "Crew Dragon"]
-space_agencies = ["NASA", "ESA", "CSA", "Roscosmos", "ISRO", "CNSA"]
-satellites = ["Starlink"]
-orbiters = ["Cassini-Huygens", "OSIRIS-REx"]
+
+# Birth & Childhood (1-3)
+birth_and_childhood = [
+    "Angel's Announcement",
+    "Birth in Bethlehem",
+    "Jesus at Temple"
+]
+
+# Beginning of Ministry (4-7)
+beginning_ministry = [
+    "Baptism",
+    "Temptation",
+    "First Disciples",
+    "First Miracle"
+]
+
+# Powerful Miracles (8-13)
+powerful_miracles = [
+    "Healing Paralytic",
+    "Calming Storm",
+    "Feeding 5000",
+    "Walking on Water",
+    "Raising Lazarus",
+    "Healing Blind"
+]
+
+# Profound Teachings (14-17)
+profound_teachings = [
+    "Sermon on Mount",
+    "Prodigal Son",
+    "I Am the Way",
+    "Greatest Commandment"
+]
+
+# Final Week (18-25)
+final_week = [
+    "Triumphal Entry",
+    "Last Supper",
+    "Gethsemane",
+    "Trial",
+    "Crucifixion",
+    "It Is Finished",
+    "Resurrection",
+    "Ascension"
+]
+
+# All moments combined
+all_moments = (birth_and_childhood + beginning_ministry + 
+               powerful_miracles + profound_teachings + final_week)
 
 # ==============================================================================
 # 4. SPACE MISSIONS (1-25)
