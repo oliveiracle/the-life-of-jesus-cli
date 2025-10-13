@@ -1,78 +1,107 @@
+# ==============================================================================
+# THE LIFE OF JESUS CHRIST - MOMENTS MODULE
+# ==============================================================================
+# This module contains formatted titles for the 25 key moments
+# in the life of Jesus Christ
+# ==============================================================================
+
 def show_title():
-    print("🌌 Exploring God's Magnificent Universe")
-    print("✨ 'The heavens declare the glory of God' - Psalm 19:1")
+    """Display the main title of the application"""
+    print("=" * 70)
+    print("✝️  THE LIFE OF JESUS CHRIST CLI")
+    print("=" * 70)
+    print("🙏 'For God so loved the world that He gave His one and only Son,")
+    print("   that whoever believes in Him shall not perish")
+    print("   but have eternal life'")
+    print("📖 John 3:16")
+    print("=" * 70)
     print()
 
 
-# Mission variables - accessible from main.py
-mission1 = "perseverance rover - mars exploration"
-# "Perseverance Rover - Mars Exploration"
-mission1_formatted = mission1.title()
-mission2 = "james webb space telescope - deep space observation"
-# "James Webb Space Telescope - Deep Space Observation"
-mission2_formatted = mission2.title()
-mission3 = "voyager 1 - interstellar space"
-# "Voyager 1 - Interstellar Space"
-mission3_formatted = mission3.title()
-mission4 = "hubble space telescope - earth orbit observation"
-# "Hubble Space Telescope - Earth Orbit Observation"
-mission4_formatted = mission4.title()
-mission5 = "curiosity rover - mars surface analysis"
-# "Curiosity Rover - Mars Surface Analysis"
-mission5_formatted = mission5.title()
-mission6 = "spitzer space telescope - infrared astronomy"
-# "Spitzer Space Telescope - Infrared Astronomy"
-mission6_formatted = mission6.title()
-mission7 = "cassini-huygens - saturn exploration"
-# "Cassini-Huygens - Saturn Exploration"
-mission7_formatted = mission7.title()
-mission8 = "new horizons - pluto and beyond"
-mission8_formatted = mission8.capitalize()  # "New horizons - pluto and beyond"
-mission9 = "galileo - jupiter exploration"
-mission9_formatted = mission9.capitalize()  # "Galileo - jupiter exploration"
-mission10 = "kepler space telescope - exoplanet discovery"
-# "Kepler Space Telescope - Exoplanet Discovery"
-mission10_formatted = mission10.title()
-mission11 = "chandra x-ray observatory - x-ray astronomy"
-# "Chandra X-Ray Observatory - X-Ray Astronomy"
-mission11_formatted = mission11.title()
-mission12 = "juno - jupiter polar orbiter"
-# "Juno - Jupiter Polar Orbiter"
-mission12_formatted = mission12.title()
-mission13 = "tess - exoplanet survey satellite"
-# "Tess - Exoplanet Survey Satellite"
-mission13_formatted = mission13.title()
-mission14 = "osiris-rex - asteroid sample return"
-# "Osiris-Rex - Asteroid Sample Return"
-mission14_formatted = mission14.title()
-mission15 = "dawn - asteroid belt exploration"
-# "Dawn - Asteroid Belt Exploration"
-mission15_formatted = mission15.title()
-mission16 = "spacex starship - interplanetary travel vehicle"
-# "Spacex Starship - Interplanetary Travel Vehicle"
-mission16_formatted = mission16.title()
-mission17 = "blue origin new shepard - suborbital spaceflight"
-# "Blue Origin New Shepard - Suborbital Spaceflight"
-mission17_formatted = mission17.title()
-mission18 = "ariane 5 - heavy lift launch vehicle"
-# "Ariane 5 - Heavy Lift Launch Vehicle"
-mission18_formatted = mission18.title()
-mission19 = "soyuz - human spaceflight"
-mission19_formatted = mission19.capitalize()  # "Soyuz - human spaceflight"
-mission20 = "falcon 9 - reusable rocket"
-mission20_formatted = mission20.capitalize()  # "Falcon 9 - reusable rocket"
-mission21 = "atlas v - versatile launch vehicle"
-# "Atlas V - Versatile Launch Vehicle"
-mission21_formatted = mission21.title()
-mission22 = "delta iv heavy - heavy lift launch vehicle"
-# "Delta Iv Heavy - Heavy Lift Launch Vehicle"
-mission22_formatted = mission22.title()
-mission23 = "sls - deep space exploration"
-# "Sls - Deep Space Exploration"
-mission23_formatted = mission23.title()
-mission24 = "crew dragon - human spaceflight"
-# "Crew Dragon - Human Spaceflight"
-mission24_formatted = mission24.title()
-mission25 = "starlink - satellite internet constellation"
-# "Starlink - Satellite Internet Constellation"
-mission25_formatted = mission25.title()
+# ==============================================================================
+# MOMENT TITLES - Formatted strings for each moment
+# ==============================================================================
+
+# BIRTH & CHILDHOOD (1-3)
+moment1 = "the angel gabriel announces jesus' birth to mary"
+moment1_formatted = moment1.title()
+
+moment2 = "the birth of jesus christ in bethlehem"
+moment2_formatted = moment2.title()
+
+moment3 = "young jesus at the temple"
+moment3_formatted = moment3.title()
+
+
+# BEGINNING OF MINISTRY (4-7)
+moment4 = "the baptism of jesus by john"
+moment4_formatted = moment4.title()
+
+moment5 = "jesus' temptation in the wilderness"
+moment5_formatted = moment5.title()
+
+moment6 = "calling the first disciples"
+moment6_formatted = moment6.title()
+
+moment7 = "first miracle - water into wine at cana"
+moment7_formatted = moment7.title()
+
+
+# POWERFUL MIRACLES (8-13)
+moment8 = "healing the paralytic man"
+moment8_formatted = moment8.title()
+
+moment9 = "calming the storm on the sea"
+moment9_formatted = moment9.title()
+
+moment10 = "feeding the five thousand"
+moment10_formatted = moment10.title()
+
+moment11 = "walking on water"
+moment11_formatted = moment11.title()
+
+moment12 = "raising lazarus from the dead"
+moment12_formatted = moment12.title()
+
+moment13 = "healing the blind man"
+moment13_formatted = moment13.title()
+
+
+# PROFOUND TEACHINGS (14-17)
+moment14 = "the sermon on the mount"
+moment14_formatted = moment14.title()
+
+moment15 = "the parable of the prodigal son"
+moment15_formatted = moment15.title()
+
+moment16 = "jesus declares: i am the way, the truth, and the life"
+moment16_formatted = moment16.title()
+
+moment17 = "the greatest commandment: love god and love others"
+moment17_formatted = moment17.title()
+
+
+# FINAL WEEK (18-25)
+moment18 = "triumphal entry into jerusalem"
+moment18_formatted = moment18.title()
+
+moment19 = "the last supper with the disciples"
+moment19_formatted = moment19.title()
+
+moment20 = "prayer in the garden of gethsemane"
+moment20_formatted = moment20.title()
+
+moment21 = "the trial and condemnation of jesus"
+moment21_formatted = moment21.title()
+
+moment22 = "the crucifixion at calvary"
+moment22_formatted = moment22.title()
+
+moment23 = "it is finished - jesus' final words"
+moment23_formatted = moment23.title()
+
+moment24 = "the resurrection - he is risen!"
+moment24_formatted = moment24.title()
+
+moment25 = "the ascension into heaven"
+moment25_formatted = moment25.title()
