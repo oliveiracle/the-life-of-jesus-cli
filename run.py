@@ -1,12 +1,12 @@
 # ==============================================================================
 # SPACE MISSION MANAGER CLI
 # ==============================================================================
-import missions
+import jesus_moments
 
 # ==============================================================================
-# 1. TÍTULO E MENU PRINCIPAL
+# 1. TITLE AND MAIN MENU
 # ==============================================================================
-missions.show_title()
+jesus_moments.show_title()
 print("Choose a mission to learn more about:")
 print("1-Perseverance | 2-James Webb | 3-Voyager 1 | 4-Hubble | 5-Curiosity")
 print("6-Spitzer | 7-Cassini-Huygens | 8-New Horizons | 9-Galileo | 10-Kepler")
@@ -16,55 +16,70 @@ print("20-Falcon 9 | 21-Atlas V | 22-Delta IV | 23-SLS")
 print("24-Crew Dragon | 25-Starlink")
 
 # ==============================================================================
-# 2. ENTRADA E VALIDAÇÃO DO USUÁRIO
+# 2. USER INPUT AND VALIDATION
 # ==============================================================================
 user_input = input("Enter your choice (1-25): ")
-option = user_input.strip()  # Remove whitespace
-    print("🌍 Russia has a rich history in space exploration!")
-    print("👨‍🚀 They launched the first human, Yuri Gagarin, into space in 1961.")
-    print("🚀 Soyuz rockets have been a reliable workhorse for decades.")
-elif "CSA" in space_agencies:
-    print(f"✅ CSA is involved with a budget of ${agency_budget['CSA']:,} USD")
-    print("🍁 Canada contributes advanced robotics to international missions!")
-    print("🤖 The Canadarm and Canadarm2 are iconic robotic arms used on the Space Shuttle and ISS.")
-    print("🌌 CSA is also involved in lunar exploration with the Artemis program.")
-else: 
-    print("❌ No major space agencies found.")
-    print("Click on options between 1 and 25 to learn more about each mission!\n")
-    
-# Current planet exploration mission using 'not in' operator
-current_missions = ["Mars", "Jupiter", "Saturn", "Pluto", "Asteroid Belt", "Exoplanets",
-                    "Interstellar Space", "Low Earth Orbit", "Deep Space", "Infrared Space"
-                    , "X-ray Space", "Suborbital Spaceflight", "Heavy Lift Launch",
-                    "Human Spaceflight", "Satellite Internet"]
+option = user_input.strip()  # REMOVE WHITESPACE
 
-# Use .lower() to accept 'QUIT', 'Quit', etc.
+# USE .LOWER() TO ACCEPT 'QUIT', 'QUIT', ETC.
 if option.lower() == 'quit' or option.lower() == 'q':
     print("👋 Thanks for exploring space missions!")
     print("🌟 Keep learning about God's amazing universe!")
     exit()
     
-# String comparison and input validation
+# STRING COMPARISON AND INPUT VALIDATION
 if not option.isdigit() or int(option) < 1 or int(option) > 25:
     print(f"❌ '{option}' is not a valid mission number!")
     print("💡 Please choose a number between 1 and 25, or type 'quit' to exit.")
     exit()
 
+# ==============================================================================
+# 3. SPACE MISSIONS CATEGORIZATION (1-25)
+# ==============================================================================
+rovers = ["Perseverance", "Curiosity"]
+space_probes = ["Voyager 1", "New Horizons", "Galileo", "Juno", "Dawn"]
+space_telescopes = ["James Webb", "Hubble", "Spitzer", "Chandra", "Kepler",
+                    "TESS"]
+launch_vehicles = ["Ariane 5", "Soyuz", "Falcon 9", "Atlas V",
+                   "Delta IV Heavy", "SLS"]
+commercial_spacecraft = ["SpaceX Starship", "Blue Origin New Shepard",
+                         "Crew Dragon"]
+space_agencies = ["NASA", "ESA", "CSA", "Roscosmos", "ISRO", "CNSA"]
+satellites = ["Starlink"]
+orbiters = ["Cassini-Huygens", "OSIRIS-REx"]
+
+# ==============================================================================
+# 4. SPACE MISSIONS (1-25)
+# ==============================================================================
+
+# MISSION 1 - PERSEVERANCE
 if option == "1":
-    # Perseverance details
+    # PERSEVERANCE DETAILS
     mission_name = "Perseverance"
     mission_type = "Mars Rover"
+    
+    # IN OPERATOR AND NOT IN OPERATOR
+    if mission_name in rovers:
+        print(f"{mission_name} is one of the rovers exploring Mars, "
+              "along with Curiosity")
+    if mission_name not in space_probes:
+        print(f"{mission_name} is NOT a space probe like Voyager 1 or Juno.")
+        print("It's a rover designed to explore the Martian surface.")
+        print("More information below:\n")
+    
+    # MISSION DETAILS
     planet = "Mars"
     purpose = "search for signs of past life"
     builder = "NASA's Jet Propulsion Laboratory"
     launch_year = 2020
     landing_year = 2021
-    cost = 2_700_000_000  # 2.7 billion USD
+    cost = 2_700_000_000  # 2.7 BILLION USD
     location = "Jezero Crater"
     current_situation = "actively exploring and sending data back to Earth"
     current_situation_formatted = current_situation.capitalize()
     
-    print(missions.mission1)
+    # DISPLAY MISSION DETAILS
+    print(jesus_moments.mission1_formatted)
     print(f"🔴 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
     print(f"🎯 Primary Mission: To {purpose} and analyze Martian geology")
@@ -75,21 +90,34 @@ if option == "1":
     print(f"🏭 Built by: {builder}")
     print(f"🌟 Exploring God's creation on {planet} since {landing_year}!")
 
+# MISSION 2 - JAMES WEBB
 elif option == "2":
-    # James Webb details
+    # JAMES WEBB DETAILS
     mission_name = "James Webb Space Telescope"
     mission_type = "Space Telescope"
+    
+    # IN OPERATOR AND NOT IN OPERATOR
+    if mission_name in space_telescopes:
+        print(f"{mission_name} is one of the premier space telescopes, "
+              "along with Hubble and Spitzer.")
+    if mission_name not in rovers:
+        print(f"{mission_name} is NOT a rover like Perseverance or "
+              "Curiosity.")
+        print("It's a space telescope designed to observe the universe.")
+        print("More information below:\n")
+    
+    # MISSION DETAILS
     specialty = "infrared observations"
-    specialty_formatted = specialty.capitalize()  # "Infrared Observations"
+    specialty_formatted = specialty.capitalize()  # "INFRARED OBSERVATIONS"
     launch_year = 2021
     orbit_location = "L2 Lagrange Point"
-    mirror_size = 6.5  # meters
-    cost = 10_000_000_000  # 10 billion USD
+    mirror_size = 6.5  # METERS
+    cost = 10_000_000_000  # 10 BILLION USD
     current_situation = "operational and sending stunning images"
     partners = "NASA, ESA, and CSA"
     partners_formatted = partners.replace(", ", " | ")
     
-    print(missions.mission2)
+    print(jesus_moments.mission2_formatted)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: Advanced {specialty_formatted}")
     print(f"🪞 Primary Mirror: {mirror_size}m diameter")
@@ -101,18 +129,18 @@ elif option == "2":
     print(f"✨ Revealing the wonders of God's universe since {launch_year}!")
 
 elif option == "3":
-    # Voyager 1 details
+    # VOYAGER 1 DETAILS
     mission_name = "Voyager 1"
     mission_type = "Space Probe"
     specialty = "interstellar exploration"
-    specialty_formatted = specialty.capitalize()  # "Interstellar Exploration"
+    specialty_formatted = specialty.capitalize()  # "INTERSTELLAR EXPLORATION"
     partners = "NASA"
     launch_year = 1977
     orbit_location = "Interstellar Space"
-    cost = 250_000_000  # 250 million USD
+    cost = 250_000_000  # 250 MILLION USD
     current_situation = "still communicating with Earth"
     
-    print(missions.mission3)
+    print(jesus_moments.mission3_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty_formatted}")
     print(f"📍 Current Location: {orbit_location}")
@@ -123,25 +151,25 @@ elif option == "3":
     print(f"✨ Exploring the vastness of God's universe since {launch_year}!")
 
 elif option == "4":
-    # Hubble details
+    # HUBBLE DETAILS
     mission_name = "Hubble Space Telescope"
     mission_type = "Space Telescope"
     specialty = "high-resolution imaging"
-    specialty_formatted = specialty.capitalize()  # "High-resolution Imaging"
+    specialty_formatted = specialty.capitalize()  # "HIGH-RESOLUTION IMAGING"
     partners = "NASA and ESA"
     launch_year = 1990
     orbit_location = "Low Earth Orbit"
-    cost = 10_000_000_000  # 10 billion USD
+    cost = 10_000_000_000  # 10 BILLION USD
     service_missions = 5
     current_situation = "still operational and capturing breathtaking images"
     
-    # Mirror comparison with other famous telescopes
-    hubble_mirror_size = 2.4  # meters
-    spitzer_mirror_size = 0.85  # meters
-    james_webb_mirror_size = 6.5  # meters
-    chandra_mirror_size = 1.2  # meters
+    # MIRROR COMPARISON WITH OTHER FAMOUS TELESCOPES
+    hubble_mirror_size = 2.4  # METERS
+    spitzer_mirror_size = 0.85  # METERS
+    james_webb_mirror_size = 6.5  # METERS
+    chandra_mirror_size = 1.2  # METERS
     
-    print(missions.mission4)
+    print(jesus_moments.mission4_formatted)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty_formatted}")
     print(f"📍 Operating Location: {orbit_location}")
@@ -153,27 +181,15 @@ elif option == "4":
     print(f"📡 Current Status: {current_situation}")
     print(f"✨ Unveiling the beauty of God's universe since {launch_year}!")
     
-    # Using comparison operators
+    # USING COMPARISON OPERATORS
     print(f"🔍 Hubble Mirror Size: {hubble_mirror_size}m diameter")
     print(f"🔍 Spitzer Mirror Size: {spitzer_mirror_size}m diameter")
     print(f"🔍 Chandra Mirror Size: {chandra_mirror_size}m diameter")
     print(f"🔍 James Webb Mirror Size: {james_webb_mirror_size}m diameter")
     
-    # Size comparison logic
-    if hubble_mirror_size > spitzer_mirror_size:
-        print(f"📏 Hubble's mirror is larger than Spitzer's by "
-              f"{hubble_mirror_size - spitzer_mirror_size:.2f}m")
-    elif hubble_mirror_size > chandra_mirror_size:
-        print(f"📏 Hubble's mirror is larger than Chandra's by "
-              f"{hubble_mirror_size - chandra_mirror_size:.2f}m")
-    elif hubble_mirror_size < james_webb_mirror_size:
-        print(f"📏 Hubble's mirror is smaller than James Webb's by "
-              f"{james_webb_mirror_size - hubble_mirror_size:.2f}m")
-    else:
-        print("📏 Hubble's mirror size is unique among these telescopes.")
 
 elif option == "5":
-    # Curiosity details
+    # CURIOSITY DETAILS
     mission_name = "Curiosity"
     mission_type = "Mars Rover"
     planet = "Mars"
@@ -181,11 +197,11 @@ elif option == "5":
     builder = "NASA's Jet Propulsion Laboratory"
     launch_year = 2011
     landing_year = 2012
-    cost = 2_500_000_000  # 2.5 billion USD
+    cost = 2_500_000_000  # 2.5 BILLION USD
     location = "Gale Crater"
     current_situation = "actively exploring and sending data back to Earth"
     
-    print(missions.mission5)
+    print(jesus_moments.mission5_formatted)
     print(f"🔴 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
     print(f"🎯 Mission: To {purpose} to understand Mars' geology")
@@ -197,20 +213,20 @@ elif option == "5":
     print(f"🌟 Exploring God's creation on {planet} since {landing_year}!")
 
 elif option == "6":
-    # Spitzer details
+    # SPITZER DETAILS
     mission_name = "Spitzer Space Telescope"
     mission_type = "Space Telescope"
     specialty = "infrared observations"
-    specialty_formatted = specialty.capitalize()  # "Infrared Observations"
+    specialty_formatted = specialty.capitalize()  # "INFRARED OBSERVATIONS"
     partners = "NASA and JPL"
     launch_year = 2003
     orbit_location = "Heliocentric Orbit"
-    mirror_size = 0.85  # meters
-    cost = 720_000_000  # 720 million USD
+    mirror_size = 0.85  # METERS
+    cost = 720_000_000  # 720 MILLION USD
     current_situation = "retired in 2020 after 16 years of service"
     active = False
     
-    print(missions.mission6)
+    print(jesus_moments.mission6_formatted)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: Advanced {specialty_formatted}")
     print(f"🪞 Primary Mirror: {mirror_size}m diameter")
@@ -222,19 +238,32 @@ elif option == "6":
     print(f"✨ Revealing God's universe wonders since {launch_year}!")
 
 elif option == "7":
-    # Cassini-Huygens details
+    # CASSINI-HUYGENS DETAILS
     mission_name = "Cassini-Huygens"
     mission_type = "Orbiter and Lander"
+    
+    
+# IN OPERATOR AND NOT IN OPERATOR
+    if mission_name in orbiters:
+        print(f"{mission_name} is one of the famous orbiters, "
+              "along with OSIRIS-REx.")
+        if mission_name not in rovers:
+            print(f"{mission_name} is NOT a rover like Perseverance or "
+                  "Curiosity.")
+            print("It's an orbiter designed to study Saturn and its moons.")
+            print("More information below:\n")
+            
+            # MISSION DETAILS
     planet = "Saturn"
     purpose = "study Saturn and its moons"
     builder = "NASA and Italy's ASI"
     launch_year = 1997
     arrival_year = 2004
     end_year = 2017
-    cost = 3_900_000_000  # 3.9 billion USD
+    cost = 3_900_000_000  # 3.9 BILLION USD
     current_situation = "mission ended in 2017 after 13 years of service"
     
-    print(missions.mission7)
+    print(jesus_moments.mission7_formatted)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
     print(f"🎯 Primary Mission: To {purpose} and analyze Saturn's rings")
@@ -247,7 +276,7 @@ elif option == "7":
           f"{arrival_year} to {end_year}!")
 
 elif option == "8":
-    # New Horizons details
+    # NEW HORIZONS DETAILS
     mission_name = "New Horizons"
     mission_type = "Space Probe"
     planet = "Pluto and Kuiper Belt"
@@ -255,10 +284,10 @@ elif option == "8":
     builder = "Johns Hopkins University Applied Physics Laboratory"
     launch_year = 2006
     arrival_year = 2015
-    cost = 700_000_000  # 700 million USD
+    cost = 700_000_000  # 700 MILLION USD
     current_situation = "still exploring the Kuiper Belt"
     
-    print(missions.mission8)
+    print(jesus_moments.mission8_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -271,7 +300,7 @@ elif option == "8":
           f"since {arrival_year}!")
 
 elif option == "9":
-    # Galileo details
+    # GALILEO DETAILS
     mission_name = "Galileo"
     mission_type = "Orbiter and Probe"
     planet = "Jupiter"
@@ -280,13 +309,13 @@ elif option == "9":
     launch_year = 1989
     arrival_year = 1995
     end_year = 2003
-    cost = 1_600_000_000  # 1.6 billion USD
+    cost = 1_600_000_000  # 1.6 BILLION USD
     current_situation = "mission ended in 2003 after 14 years of service"
     current_situation_formatted = current_situation.capitalize()
     partners = "NASA, ESA and Germany's DLR"
     partners_formatted = partners.replace(", ", " | ")
     
-    print(missions.mission9)
+    print(jesus_moments.mission9_formatted)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -301,21 +330,21 @@ elif option == "9":
           f"{arrival_year} to {end_year}!")
 
 elif option == "10":
-    # Kepler details
+    # KEPLER DETAILS
     mission_name = "Kepler Space Telescope"
     mission_type = "Space Telescope"
     specialty = "exoplanet discovery"
-    specialty_formatted = specialty.capitalize()  # "Exoplanet Discovery"
+    specialty_formatted = specialty.capitalize()  # "EXOPLANET DISCOVERY"
     partners = "NASA and JPL"
     launch_year = 2009
     end_year = 2018
-    mirror_size = 0.95  # meters
-    cost = 600_000_000  # 600 million USD
+    mirror_size = 0.95  # METERS
+    cost = 600_000_000  # 600 MILLION USD
     current_situation = ("retired in 2018 after discovering thousands "
                          "of exoplanets")
     current_situation_formatted = current_situation.capitalize()
     
-    print(missions.mission10)
+    print(jesus_moments.mission10_formatted)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty_formatted}")
     print(f"🪞 Primary Mirror: {mirror_size}m diameter")
@@ -328,19 +357,19 @@ elif option == "10":
           f"{launch_year} to {end_year}!")
 
 elif option == "11":
-    # Chandra details
+    # CHANDRA DETAILS
     mission_name = "Chandra X-ray Observatory"
     mission_type = "Space Telescope"
     specialty = "X-ray observations"
     partners = "NASA and Smithsonian Astrophysical Observatory"
     launch_year = 1999
     orbit_location = "High Earth Orbit"
-    mirror_size = 1.2  # meters
-    cost = 1_600_000_000  # 1.6 billion USD
+    mirror_size = 1.2  # METERS
+    cost = 1_600_000_000  # 1.6 BILLION USD
     current_situation = "still operational and capturing high-energy phenomena"
     current_situation_formatted = current_situation.capitalize()
     
-    print(missions.mission11)
+    print(jesus_moments.mission11_formatted)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: Advanced {specialty}")
     print(f"🪞 Primary Mirror: {mirror_size}m diameter")
@@ -353,7 +382,7 @@ elif option == "11":
           f"since {launch_year}!")
 
 elif option == "12":
-    # Juno details
+    # JUNO DETAILS
     mission_name = "Juno"
     mission_type = "Orbiter"
     planet = "Jupiter"
@@ -361,14 +390,14 @@ elif option == "12":
     builder = "Lockheed Martin"
     launch_year = 2011
     arrival_year = 2016
-    cost = 1_100_000_000  # 1.1 billion USD
+    cost = 1_100_000_000  # 1.1 BILLION USD
     current_situation = "actively orbiting and sending data back to Earth"
     current_situation_formatted = current_situation.capitalize()
     size = "20 feet tall"
-    weight = 3_600  # pounds
-    solar_panels_span = 66  # feet
+    weight = 3_600  # POUNDS
+    solar_panels_span = 66  # FEET
     
-    print(missions.mission12)
+    print(jesus_moments.mission12_formatted)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Destination: {planet}")
     print(f"🎯 Primary Mission: To {purpose}")
@@ -382,7 +411,7 @@ elif option == "12":
     print(f"🌟 Exploring God's creation on {planet} since {arrival_year}!")
 
 elif option == "13":
-    # TESS details
+    # TESS DETAILS
     mission_name = "Transiting Exoplanet Survey Satellite (TESS)"
     mission_type = "Space Telescope"
     specialty = "exoplanet discovery"
@@ -390,15 +419,15 @@ elif option == "13":
     partners_formatted = partners.replace(", ", " | ")
     launch_year = 2018
     orbit_location = "High Earth Orbit"
-    mirror_size = 0.1  # meters
-    cost = 337_000_000  # 337 million USD
+    mirror_size = 0.1  # METERS
+    cost = 337_000_000  # 337 MILLION USD
     current_situation = "actively discovering new exoplanets"
     current_situation_formatted = current_situation.capitalize()
     size = "13.2 feet tall"
-    weight = 1_200  # pounds
+    weight = 1_200  # POUNDS
     mirror_count = 4
 
-    print(missions.mission13)
+    print(jesus_moments.mission13_formatted)
     print(f"🔭 {mission_type}: {mission_name}")
     print(f"🌌 Specialty: {specialty}")
     print(f"🪞 Primary Mirror: {mirror_size}m diameter")
@@ -412,21 +441,21 @@ elif option == "13":
     print(f"✨ Discovering new worlds in God's universe since {launch_year}!")
 
 elif option == "14":
-    # OSIRIS-REx details
+    # OSIRIS-REX DETAILS
     mission_name = "OSIRIS-REx"
     mission_type = "Sample Return Mission"
     asteroid = "Bennu"
     purpose = "collect samples from the asteroid and return them to Earth"
-    purpose_formatted = purpose.capitalize()  # .capitalize()
+    purpose_formatted = purpose.capitalize()  # .CAPITALIZE()
     builder = "Lockheed Martin"
     launch_year = 2016
     arrival_year = 2018
     return_year = 2023
-    cost = 800_000_000  # 800 million USD
+    cost = 800_000_000  # 800 MILLION USD
     current_situation = "sample capsule returned to Earth in 2023"
     orbit_location = "Near-Earth Asteroid"
 
-    print(missions.mission14)
+    print(jesus_moments.mission14_formatted)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"📍 Target Asteroid: {asteroid}")
     print(f"🎯 Primary Mission: {purpose_formatted} for analysis")
@@ -440,7 +469,7 @@ elif option == "14":
           f"since {arrival_year}!")
 
 elif option == "15":
-    # Dawn details
+    # DAWN DETAILS
     mission_name = "Dawn"
     mission_type = "Orbiter"
     purpose = "study the two largest objects in the asteroid belt"
@@ -450,10 +479,10 @@ elif option == "15":
     departure_vesta_year = 2012
     arrival_ceres_year = 2015
     end_year = 2018
-    cost = 500_000_000  # 500 million USD
+    cost = 500_000_000  # 500 MILLION USD
     current_situation = "mission ended in 2018 after running out of fuel"
 
-    print(missions.mission15)
+    print(jesus_moments.mission15_formatted)
     print(f"🪐 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}, Vesta and Ceres")
     print("and understand their formation and evolution")
@@ -469,19 +498,29 @@ elif option == "15":
           f"{arrival_vesta_year} to {end_year}!")
 
 elif option == "16":
-    # SpaceX Starship details
+    # SPACEX STARSHIP DETAILS
     mission_name = "SpaceX Starship"
     mission_type = "Interplanetary Spacecraft"
     purpose = "enable human missions to Mars and beyond"
+    
+    # IN OPERATOR AND NOT IN OPERATOR
+    if mission_name in commercial_spacecraft:
+        print(f"{mission_name} is one of the commercial spacecraft, "
+              "along with Blue Origin New Shepard and Crew Dragon.")
+    if mission_name not in rovers:
+        print(f"{mission_name} is NOT a rover like Perseverance or Curiosity.")
+        print("It's a spacecraft designed for interplanetary travel.")
+        print("More information below:\n")
+        # MISSION DETAILS
     builder = "SpaceX"
-    launch_year = 2023  # First test flight year
-    cost = "TBD"  # Cost is still to be determined
+    launch_year = 2023  # FIRST TEST FLIGHT YEAR
+    cost = "TBD"  # COST IS STILL TO BE DETERMINED
     reusable = True
     capacity = "100+ tons to LEO"
     payload = "100+ people"
     reliability = "In development"
 
-    print(missions.mission16)
+    print(jesus_moments.mission16_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("and revolutionize space travel")
@@ -495,18 +534,18 @@ elif option == "16":
     print("🌟 Pioneering human exploration of God's universe!")
 
 elif option == "17":
-    # Blue Origin details
+    # BLUE ORIGIN DETAILS
     mission_name = "Blue Origin New Shepard"
     mission_type = "Suborbital Spaceflight Vehicle"
     purpose = "take passengers to the edge of space"
     builder = "Blue Origin"
-    launch_year = 2015  # First test flight year
-    cost = "TBD"  # Cost is still to be determined
-    horsepower = 110_000  # 110,000 pounds of thrust
+    launch_year = 2015  # FIRST TEST FLIGHT YEAR
+    cost = "TBD"  # COST IS STILL TO BE DETERMINED
+    horsepower = 110_000  # 110,000 POUNDS OF THRUST
     reusable = True
     reliability = "100% success rate in its last 15 flights"
 
-    print(missions.mission17)
+    print(jesus_moments.mission17_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("and provide commercial space tourism")
@@ -519,19 +558,19 @@ elif option == "17":
     print("🌟 Offering a glimpse of God's creation from space!")
 
 elif option == "18":
-    # Ariane 5 details
+    # ARIANE 5 DETAILS
     mission_name = "Ariane 5"
     mission_type = "Heavy-Lift Launch Vehicle"
     purpose = "deliver payloads to orbit"
     builder = "Arianespace and ESA"
-    launch_year = 1996  # First flight year
-    cost_per_launch = 165_000_000  # 165 million USD per launch
-    total_launches = 111  # Total launches as of 2023
-    horsepower = 2_200_000  # 2.2 million pounds of thrust
+    launch_year = 1996  # FIRST FLIGHT YEAR
+    cost_per_launch = 165_000_000  # 165 MILLION USD PER LAUNCH
+    total_launches = 111  # TOTAL LAUNCHES AS OF 2023
+    horsepower = 2_200_000  # 2.2 MILLION POUNDS OF THRUST
     size = "171 feet tall"
     reliability = "95% success rate"
 
-    print(missions.mission18)
+    print(jesus_moments.mission18_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("for commercial and government clients")
@@ -545,19 +584,19 @@ elif option == "18":
     print(f"🌟 Delivering payloads into God's orbit since {launch_year}!")
 
 elif option == "19":
-    # Soyuz details
+    # SOYUZ DETAILS
     mission_name = "Soyuz"
     mission_type = "Crewed Spacecraft"
     purpose = "transport astronauts to and from the ISS"
     builder = "Roscosmos"
     first_flight_year = 1967
-    total_missions = 140  # Total crewed missions as of 2023
-    cost_per_mission = 90_000_000  # 90 million USD per mission
+    total_missions = 140  # TOTAL CREWED MISSIONS AS OF 2023
+    cost_per_mission = 90_000_000  # 90 MILLION USD PER MISSION
     current_situation = "still in use for crewed missions to the ISS"
     size = "49.5 feet tall"
     payload = "7,000 pounds to LEO"
 
-    print(missions.mission19)
+    print(jesus_moments.mission19_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("and ensure safe crew transport")
@@ -572,19 +611,19 @@ elif option == "19":
           f"since {first_flight_year}!")
 
 elif option == "20":
-    # Falcon 9 details
+    # FALCON 9 DETAILS
     mission_name = "Falcon 9"
     mission_type = "Reusable Rocket"
     purpose = "deliver payloads to orbit and return to Earth"
     builder = "SpaceX"
     first_flight_year = 2010
-    total_launches = 200  # Total launches as of 2023
-    cost_per_launch = 62_000_000  # 62 million USD per launch
-    horsepower = 1_710_000  # 1.71 million pounds of thrust
+    total_launches = 200  # TOTAL LAUNCHES AS OF 2023
+    cost_per_launch = 62_000_000  # 62 MILLION USD PER LAUNCH
+    horsepower = 1_710_000  # 1.71 MILLION POUNDS OF THRUST
     reusable = True
     reliability = "98% success rate"
 
-    print(missions.mission20)
+    print(jesus_moments.mission20_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("for refurbishment and reuse, revolutionizing space access")
@@ -599,27 +638,27 @@ elif option == "20":
           f"since {first_flight_year}!")
 
 elif option == "21":
-    # Atlas V details
+    # ATLAS V DETAILS
     mission_name = "Atlas V"
     mission_type = "Launch Vehicle"
     purpose = "deliver payloads to a variety of orbits"
     builder = "United Launch Alliance (ULA)"
     first_flight_year = 2002
-    total_launches = 87  # Total launches as of 2023
-    horsepower = 940_000  # 940,000 pounds of thrust
+    total_launches = 87  # TOTAL LAUNCHES AS OF 2023
+    horsepower = 940_000  # 940,000 POUNDS OF THRUST
     size = "191 feet tall"
     reliability = "100% success rate in its last 29 launches"
     bigger_than_falcon_heavy = False
     bigger_than_sls = False
     
-    # Using comparison operators
-    cost_per_launch = 109_000_000  # 109 million USD per launch
-    ariane5_cost_per_launch = 165_000_000  # 165 million USD per launch
-    sls_cost_per_launch = 2_000_000_000  # 2 billion USD per launch
-    falcon_cost_per_launch = 62_000_000  # 62 million USD per launch
-    delta_iv_cost_per_launch = 164_000_000  # 164 million USD per launch
+    # USING COMPARISON OPERATORS
+    cost_per_launch = 109_000_000  # 109 MILLION USD PER LAUNCH
+    ariane5_cost_per_launch = 165_000_000  # 165 MILLION USD PER LAUNCH
+    sls_cost_per_launch = 2_000_000_000  # 2 BILLION USD PER LAUNCH
+    falcon_cost_per_launch = 62_000_000  # 62 MILLION USD PER LAUNCH
+    delta_iv_cost_per_launch = 164_000_000  # 164 MILLION USD PER LAUNCH
 
-    print(missions.mission21)
+    print(jesus_moments.mission21_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("for commercial, government, and military clients")
@@ -634,7 +673,7 @@ elif option == "21":
     print(f"🌟 Delivering payloads into God's orbit "
           f"since {first_flight_year}!")
     
-    # Cost comparison with other rockets
+    # COST COMPARISON WITH OTHER ROCKETS
     if ariane5_cost_per_launch < sls_cost_per_launch:
         print(f"📏 SLS is way more expensive than Ariane 5 by "
               f"${sls_cost_per_launch - ariane5_cost_per_launch:,} USD")
@@ -651,20 +690,20 @@ elif option == "21":
         print("📏 Ariane 5's cost per launch is unique among these rockets.")
 
 elif option == "22":
-    # Delta IV details
+    # DELTA IV DETAILS
     mission_name = "Delta IV"
     mission_type = "Heavy-Lift Launch Vehicle"
     purpose = "deliver large payloads to orbit"
     builder = "United Launch Alliance (ULA)"
     first_flight_year = 2002
-    total_launches = 43  # Total launches as of 2023
-    cost_per_launch = 164_000_000  # 164 million USD per launch
-    horsepower = 2_100_000  # 2.1 million pounds of thrust
+    total_launches = 43  # TOTAL LAUNCHES AS OF 2023
+    cost_per_launch = 164_000_000  # 164 MILLION USD PER LAUNCH
+    horsepower = 2_100_000  # 2.1 MILLION POUNDS OF THRUST
     size = "235 feet tall"
     bigger_than_sls = False
     bigger_than_falcon_heavy = True
 
-    print(missions.mission22)
+    print(jesus_moments.mission22_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("for government and military clients")
@@ -680,24 +719,24 @@ elif option == "22":
           f"since {first_flight_year}!")
 
 elif option == "23":
-    # SLS details
+    # SLS DETAILS
     mission_name = "Space Launch System (SLS)"
     mission_location = "Moon and beyond"
     mission_type = "Heavy-Lift Launch Vehicle"
     purpose = "enable human exploration beyond low Earth orbit"
     builder = "NASA and Boeing"
-    first_flight_year = 2022  # First test flight year
-    cost_per_launch = 2_000_000_000  # 2 billion USD per launch
-    horsepower = 8_800_000  # 8.8 million pounds of thrust
+    first_flight_year = 2022  # FIRST TEST FLIGHT YEAR
+    cost_per_launch = 2_000_000_000  # 2 BILLION USD PER LAUNCH
+    horsepower = 8_800_000  # 8.8 MILLION POUNDS OF THRUST
     size = "322 feet tall"
     bigger_than_falcon_heavy = True
     
-    # Rocket height comparisons (in feet)
-    delta_iv_height = 235      # Delta IV
-    sls_height = 322           # SLS (already defined above)
-    falcon_heavy_height = 229  # Falcon Heavy (real data)
+    # ROCKET HEIGHT COMPARISONS (IN FEET)
+    delta_iv_height = 235      # DELTA IV
+    sls_height = 322           # SLS (ALREADY DEFINED ABOVE)
+    falcon_heavy_height = 229  # FALCON HEAVY (REAL DATA)
 
-    print(missions.mission23)
+    print(jesus_moments.mission23_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print(f"and support Artemis missions to the {mission_location}")
@@ -710,7 +749,7 @@ elif option == "23":
     print(f"🌟 The {mission_name} is the most powerful rocket "
           "ever built by humans!")
     
-    # Height comparison with other heavy rockets
+    # HEIGHT COMPARISON WITH OTHER HEAVY ROCKETS
     print(f"📏 Delta IV Height: {delta_iv_height} feet")
     print(f"🔍 Compared to SLS ({sls_height} feet): "
           f"{delta_iv_height - sls_height:+d} feet")
@@ -720,15 +759,15 @@ elif option == "23":
           f"since {first_flight_year}!")
 
 elif option == "24":
-    # Crew Dragon details
+    # CREW DRAGON DETAILS
     mission_name = "Crew Dragon"
     mission_type = "Crewed Spacecraft"
     purpose = "transport astronauts to and from the ISS"
     builder = "SpaceX"
-    first_flight_year = 2020  # First crewed flight year
-    cost_per_mission = 55_000_000  # 55 million USD per mission
+    first_flight_year = 2020  # FIRST CREWED FLIGHT YEAR
+    cost_per_mission = 55_000_000  # 55 MILLION USD PER MISSION
 
-    print(missions.mission24)
+    print(jesus_moments.mission24_formatted)
     print(f"🚀 {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("and ensure safe crew transport")
@@ -739,18 +778,28 @@ elif option == "24":
           f"since {first_flight_year}!")
 
 elif option == "25":
-    # Starlink details
+    # STARLINK DETAILS
     mission_name = "Starlink"
     mission_type = "Satellite Constellation"
     purpose = "provide global internet coverage"
+    
+    # IN OPERATOR AND NOT IN OPERATOR
+    if mission_name in commercial_spacecraft:
+        print(f"{mission_name} is one of the commercial spacecraft, "
+              "along with Blue Origin New Shepard and Crew Dragon.")
+    if mission_name not in rovers:
+        print(f"{mission_name} is NOT a rover like Perseverance or Curiosity.")
+        print("It's a satellite constellation designed for global internet.")
+        print("More information below:\n")
+        # MISSION DETAILS
     builder = "SpaceX"
-    launch_year = 2019  # First satellite launch year
-    total_satellites = 4000  # Total satellites launched as of 2023
-    cost = 10_000_000_000  # 10 billion USD (estimated total cost)
-    number_of_launches = 60  # Total launches as of 2023
-    number_of_satellites_orbit = 4000  # Total satellites in orbit as of 2023
+    launch_year = 2019  # FIRST SATELLITE LAUNCH YEAR
+    total_satellites = 4000  # TOTAL SATELLITES LAUNCHED AS OF 2023
+    cost = 10_000_000_000  # 10 BILLION USD (ESTIMATED TOTAL COST)
+    number_of_launches = 60  # TOTAL LAUNCHES AS OF 2023
+    number_of_satellites_orbit = 4000  # TOTAL SATELLITES IN ORBIT AS OF 2023
 
-    print(missions.mission25)
+    print(jesus_moments.mission25_formatted)
     print(f"🛰️ {mission_type}: {mission_name}")
     print(f"🎯 Primary Mission: To {purpose}")
     print("and connect underserved areas")
@@ -766,19 +815,4 @@ elif option == "25":
 else:
     print("Invalid option. Please select a number between 1 and 25.")
     exit()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
