@@ -940,3 +940,4 @@ while True:
         print("\n🙏 Look up, your redemption draws near!")
 
         print("\n--- Enter another number or 'quit' to exit! ---")
+# Commit 1: Add while loop feature
