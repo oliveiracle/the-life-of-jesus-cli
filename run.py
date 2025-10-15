@@ -942,3 +942,4 @@ while True:
         print("\n--- Enter another number or 'quit' to exit! ---")
 # Commit 1: Add while loop feature
 # Commit 2: Add break statement for clean exit
+# Commit 3: Add continue for invalid input handling
