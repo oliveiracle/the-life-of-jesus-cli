@@ -1,5 +1,34 @@
 import jesus_moments
 
+# Dictionary with all 25 moments titles for search
+moments_data = {
+    1: "Angel's Announcement - Gabriel announces Jesus' birth",
+    2: "Birth in Bethlehem - Jesus is born",
+    3: "Jesus at Temple - Young Jesus teaches at 12 years old",
+    4: "Baptism - Jesus is baptized by John",
+    5: "Temptation - Jesus resists the devil in wilderness",
+    6: "First Disciples - Jesus calls his followers",
+    7: "First Miracle - Water into wine at Cana",
+    8: "Healing Paralytic - Jesus heals and forgives sins",
+    9: "Calming Storm - Jesus commands wind and waves",
+    10: "Feeding 5000 - Miracle of bread and fish",
+    11: "Walking on Water - Jesus walks on the sea",
+    12: "Raising Lazarus - Jesus brings Lazarus back to life",
+    13: "Healing Blind - Jesus restores sight",
+    14: "Sermon on Mount - Jesus teaches the Beatitudes",
+    15: "Prodigal Son - Parable of God's forgiveness",
+    16: "I Am the Way - Jesus declares his divine nature",
+    17: "Greatest Commandment - Love God and love others",
+    18: "Triumphal Entry - Jesus enters Jerusalem",
+    19: "Last Supper - Jesus shares final meal with disciples",
+    20: "Gethsemane - Jesus prays before arrest",
+    21: "Trial - Jesus stands before Pilate",
+    22: "Crucifixion - Jesus dies on the cross",
+    23: "It Is Finished - Jesus' final words",
+    24: "Resurrection - Jesus rises from the dead",
+    25: "Ascension - Jesus returns to heaven"
+}
+
 # 1. TITLE
 jesus_moments.show_title()
 
@@ -12,10 +41,11 @@ while True:
     print("\n📖 What would you like to explore?\n")
     print("1 - The 25 Key Moments of Jesus' Life")
     print("2 - The Parables of Jesus (5 important teachings)")
+    print("3 - Search moments by keyword")
     print("\nType 'quit' to exit\n")
     print("=" * 70)
     
-    main_choice = input("\nYour choice (1, 2, or 'quit'): ").strip()
+    main_choice = input("\nYour choice (1, 2, 3, or 'quit'): ").strip()
     
     # QUIT
     if main_choice.lower() == "quit" or main_choice.lower() == "q":
@@ -71,7 +101,7 @@ while True:
                 print("\n💡 Please choose a number between 1 and 25, type 'back', or 'quit'.")
                 continue
             
-            # SEUS 25 IF/ELIF DOS MOMENTOS AQUI (indentado dentro do while!)
+            # IF/ELIF DOS MOMENTOS
             if option == "1":
                 moment_name = "The Angel Gabriel Announces Jesus' Birth"
                 moment_type = "Divine Announcement"
@@ -1049,8 +1079,72 @@ while True:
             
             print("\n--- Type another number, 'back' for menu, or 'quit'! ---")
     
+    # OPTION 3: SEARCH MOMENTS
+    elif main_choice == "3":
+        while True:
+            print("\n" + "=" * 70)
+            print("\n🔍 SEARCH MOMENTS BY KEYWORD")
+            print("=" * 70)
+            print("\nType a keyword to search (e.g., 'water', 'healing', 'miracle')")
+            print("or 'back' to return to main menu\n")
+            print("=" * 70)
+            
+            search_term = input("\nEnter keyword or 'back': ").strip()
+            
+            # Back to main menu
+            if search_term.lower() == "back" or search_term.lower() == "b":
+                break
+            
+            # Quit
+            if search_term.lower() == "quit" or search_term.lower() == "q":
+                print("\n✝ Thank you for exploring the life of Jesus!")
+                print("\n🙏 'I am with you always, to the very end of the age'")
+                print("   - Matthew 28:20")
+                exit()
+            
+            # Empty search
+            if not search_term:
+                print("\n❌ Please enter a keyword to search!")
+                continue
+            
+            # Search in moments
+            results = []
+            for num, title in moments_data.items():
+                if search_term.lower() in title.lower():
+                    results.append((num, title))
+            
+            # Display results
+            if results:
+                print(f"\n✅ Found {len(results)} moment(s) matching '{search_term}':\n")
+                for num, title in results:
+                    print(f"   {num} - {title}")
+                
+                print("\n" + "=" * 70)
+                choice = input("\nEnter a number to view details, or 'back' to search again: ").strip()
+                
+                if choice.lower() == "back" or choice.lower() == "b":
+                    continue
+                
+                if choice.lower() == "quit" or choice.lower() == "q":
+                    print("\n✝ Thank you for exploring the life of Jesus!")
+                    print("\n🙏 'I am with you always, to the very end of the age'")
+                    print("   - Matthew 28:20")
+                    exit()
+                
+                # Validate number choice
+                if choice.isdigit() and int(choice) in [r[0] for r in results]:
+                    print(f"\n💡 Please go to main menu, select option 1, then choose moment {choice}")
+                    input("\nPress enter to continue...")
+                else:
+                    print(f"\n❌ '{choice}' is not in the search results!")
+                    input("\nPress enter to continue...")
+            else:
+                print(f"\n❌ No moments found matching '{search_term}'")
+                print("\n💡 Try different keywords like: miracle, water, healing, teaching")
+                input("\nPress enter to continue...")
+    
     # INVALID CHOICE
     
     else:
         print(f"\n❌ '{main_choice}' is not valid!")
-        print("\n💡 Choose 1 (Moments), 2 (Parables), or 'quit'")
+        print("\n💡 Choose 1 (Moments), 2 (Parables), 3 (Search), or 'quit'")
