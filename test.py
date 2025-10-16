@@ -105,7 +105,7 @@ while True:
                 print(f'   "{mary_response}" - Luke 1:38')
                 print()
                 print("\n🙏 May we respond to God's call with the same faith and humility!")
-                input("\nPress enter to continue....")  # <-- Adicione isso!
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "2":
                 moment_name = "The Birth of Jesus Christ"
@@ -146,7 +146,9 @@ while True:
                 print("\n💡 John 1:14 - 'The Word became flesh and made his dwelling among us.'")
                 print()
                 print("\n🙏 Jesus left heaven's glory to be born in humility - for you and me!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
+
+
             elif option == "3":
                 moment_name = "Young Jesus at the Temple"
                 moment_type = "Early Wisdom"
@@ -183,7 +185,7 @@ while True:
                 print(f'\n💡 "{jesus_response}" - Luke 2:49')
                 print()
                 print("\n🙏 Even as a child, Jesus knew His divine purpose!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "4":
                 moment_name = "The Baptism of Jesus"
@@ -218,7 +220,7 @@ while True:
                 print(f'   "{god_affirmation}" - Matthew 3:17')
                 print()
                 print("\n🙏 May we seek God's approval in all we do!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "5":
                 moment_name = "The Temptation of Jesus"
@@ -252,7 +254,7 @@ while True:
                 print(f'   "{jesus_quote}" - Matthew 4:4')
                 print()
                 print("\n🙏 Let us arm ourselves with Scripture against trials!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "6":
                 moment_name = "Calling the First Disciples"
@@ -287,7 +289,7 @@ while True:
                 print(f'   "{disciple_response}" - John 1:45')
                 print()
                 print("\n🙏 May we follow Jesus with the same zeal!")
-                input("\nPress enter to continue...")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "7":
                 moment_name = "The First Miracle at Cana"
@@ -322,7 +324,7 @@ while True:
                 print(f'   "{mary_instruction}" - John 2:5')
                 print()
                 print("\n🙏 Obey Jesus in every situation!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "8":
                 moment_name = "Healing the Paralytic"
@@ -356,7 +358,7 @@ while True:
                 print(f'   "{jesus_forgiveness}" - Luke 5:20')
                 print()
                 print("\n🙏 Bring others to Jesus in faith!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "9":
                 moment_name = "Calming the Storm"
@@ -391,7 +393,7 @@ while True:
                 print(f'   "{disciples_cry}" - Matthew 8:25')
                 print()
                 print("\n🙏 Trust Jesus in life's storms!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "10":
                 moment_name = "Feeding the 5000"
@@ -426,7 +428,7 @@ while True:
                 print(f"   {leftover} - Matthew 14:20")
                 print()
                 print("\n🙏 God provides more than enough!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "11":
                 moment_name = "Walking on Water"
@@ -461,7 +463,7 @@ while True:
                 print(f'   "{peter_step}" - Matthew 14:28')
                 print()
                 print("\n🙏 Step out in faith toward Jesus!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "12":
                 moment_name = "Raising Lazarus"
@@ -496,7 +498,7 @@ while True:
                 print(f'   "{martha_faith}" - John 11:27')
                 print()
                 print("\n🙏 Believe in Jesus, the giver of life!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "13":
                 moment_name = "Healing the Blind Man"
@@ -530,7 +532,7 @@ while True:
                 print(f'   "{blind_man_defense}" - John 9:33')
                 print()
                 print("\n🙏 Share your story of transformation!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "14":
                 moment_name = "The Sermon on the Mount"
@@ -566,7 +568,7 @@ while True:
                 print(f'   "{beatitude}" - Matthew 5:3')
                 print()
                 print("\n🙏 Live by the Sermon on the Mount!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "15":
                 moment_name = "The Parable of the Prodigal Son"
@@ -601,7 +603,7 @@ while True:
                 print(f'   "{father_welcome}" - Luke 15:24')
                 print()
                 print("\n🙏 Run back to the Father's arms!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "16":
                 moment_name = "I Am the Way, the Truth, and the Life"
@@ -635,7 +637,7 @@ while True:
                 print(f'   "{comfort_promise}" - John 14:1')
                 print()
                 print("\n🙏 Follow the Way today!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "17":
                 moment_name = "The Greatest Commandment"
@@ -670,7 +672,7 @@ while True:
                 print(f'   "{second_command}" - Matthew 22:39')
                 print()
                 print("\n🙏 Love God wholly and others fully!")
-                input("\nPress enter to continue.r...")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "18":
                 moment_name = "The Triumphal Entry"
@@ -705,7 +707,7 @@ while True:
                 print(f'   "{crowd_shout}" - John 12:13')
                 print()
                 print("\n🙏 Welcome Jesus as King of your life!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "19":
                 moment_name = "The Last Supper"
@@ -740,7 +742,7 @@ while True:
                 print(f'   "{blood_covenant}" - Matthew 26:28')
                 print()
                 print("\n🙏 Remember Jesus' sacrifice often!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "20":
                 moment_name = "The Agony in Gethsemane"
@@ -775,7 +777,7 @@ while True:
                 print(f'   "{cup_prayer}" - Matthew 26:39')
                 print()
                 print("\n🙏 Surrender your will to God's!")
-                input("\nPress enter to continue....") 
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "21":
                 moment_name = "The Trial Before Pilate"
@@ -810,7 +812,7 @@ while True:
                 print(f'   "{pilate_question}" - Matthew 27:11')
                 print()
                 print("\n🙏 Stand firm in truth amid injustice!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "22":
                 moment_name = "The Crucifixion"
@@ -847,7 +849,7 @@ while True:
                 print(f'   "{forgiveness_prayer}" - Luke 23:34')
                 print()
                 print("\n🙏 Thank God for the cross!")
-                input("\nPress enter to continue.r...")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "23":
                 moment_name = "It Is Finished"
@@ -881,7 +883,7 @@ while True:
                 print(f'   "{final_breath}"')
                 print()
                 print("\n🙏 Rest in the finished work of Christ!")
-                input("\nPress enter to continue...")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "24":
                 moment_name = "The Resurrection"
@@ -916,7 +918,7 @@ while True:
                 print(f'   "{empty_tomb}" - Matthew 28:6')
                 print()
                 print("\n🙏 Rejoice in the risen Lord!")
-                input("\nPress enter to continue....")  
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             elif option == "25":
                 moment_name = "The Ascension"
@@ -950,7 +952,7 @@ while True:
                 print(f'   "{promise_return}" - Acts 1:11')
                 print()
                 print("\n🙏 Look up, your redemption draws near!")
-                input("\nPress enter to continue....")  #
+                input("\nPressione Enter para continuar...")  # <-- Adicione isso!
 
             print("\n--- Enter another number or 'back' to main menu! ---")
 
@@ -993,7 +995,7 @@ while True:
                 print("\n\n🌱\n 'But the seed on good soil stands for those with")
                 print("   a noble and good heart' - Luke 8:15")
                 print("\n\n💡\n Reflect: How do you receive God's word in your life?")
-                input("\nPress enter to continue.r...")
+                input("\nPressione Enter para continuar...")
             
             # PARÁBOLA 2: Good Samaritan
             elif parable_choice == "2":
@@ -1005,7 +1007,7 @@ while True:
                 print("showing love and mercy to a stranger.")
                 print("\n\n🤝\n 'Love your neighbor as yourself.' - Luke 10:27")
                 print("\n\n💡\n Reflect: Who is your neighbor, and how can you show them love?")
-                input("\nPress enter to continue...")
+                input("\nPressione Enter para continuar...")
             
             # PARÁBOLA 3: Prodigal Son
             elif parable_choice == "3":
@@ -1016,7 +1018,7 @@ while True:
                 print("illustrating God's forgiving love and joy over repentance.")
                 print("\n\n🧑🧒\n 'This son of mine was dead and is alive again;' - Luke 15:24")
                 print("\n\n💡\n Reflect: Are you in need of forgiveness or ready to forgive?")
-                input("\nPress enter to continue....")
+                input("\nPressione Enter para continuar...")
             
             # PARÁBOLA 4: Talents
             elif parable_choice == "4":
@@ -1028,7 +1030,7 @@ while True:
                 print("The master rewards the faithful and punishes the lazy.")
                 print("\n\n💰\n 'Well done, good and faithful servant!' - Matthew 25:21")
                 print("\n\n💡\n Reflect: How are you using your gifts for God's kingdom?")
-                input("\nPress enter to continue...")
+                input("\nPressione Enter para continuar...")
             
             # PARÁBOLA 5: Mustard Seed
             elif parable_choice == "5":
@@ -1040,7 +1042,7 @@ while True:
                 print("\n\n🌳\n 'The kingdom of heaven is like a mustard seed...'")
                 print("   - Matthew 13:31-32")
                 print("\n\n💡\n Reflect: How is your faith growing, even from small beginnings?")
-                input("\nPress enter to continue....")
+                input("\nPressione Enter para continuar...")
             
             else:
                 print(f"\n❌ '{parable_choice}' is not valid!")
@@ -1050,7 +1052,7 @@ while True:
             print("\n--- Type another number, 'back' for menu, or 'quit'! ---")
     
     # INVALID CHOICE
-    
     else:
         print(f"\n❌ '{main_choice}' is not valid!")
         print("\n💡 Choose 1 (Moments), 2 (Parables), or 'quit'")
+        #######################################################
