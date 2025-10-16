@@ -68,6 +68,14 @@ This CLI application was created to provide an accessible, scripture-based explo
   - From Annunciation to Ascension
   - Complete chronological coverage
 
+  - **Three-Level Navigation**
+  - Main Menu with 3 exploration paths
+  - 25 Key Moments organized by life phase
+  - 5 Parables with reflections
+  - Keyword search across all content
+  - 'Back' navigation to return to main menu
+  - Multiple exit points throughout
+
 - **Interactive Menu System**
 
   - Clear categorical organization with emoji indicators
@@ -338,10 +346,11 @@ _No additional dependencies required - uses Python standard library only_
    - 25 moments displayed in 5 categories
    - Each moment numbered 1-25
 
-3. **Select a moment**
+3. **Choose your exploration path**
 
-   - Type a number (1-25)
-   - Press Enter
+   - Option 1: Browse 25 key moments
+   - Option 2: Learn from 5 parables
+   - Option 3: Search by keyword
 
 4. **Read the moment details**
 
@@ -367,7 +376,25 @@ $ python3 run.py
     ✝ THE LIFE OF JESUS CHRIST ✝
  ═══════════════════════════════════════════════════
 
+══════════════════════════════════════════════════════════════════════
+✝️  MAIN MENU - THE LIFE OF JESUS
+══════════════════════════════════════════════════════════════════════
+
+📖 What would you like to explore?
+
+1 - The 25 Key Moments of Jesus' Life
+2 - The Parables of Jesus (5 important teachings)
+3 - Search moments by keyword
+
+Type 'quit' to exit
+
+══════════════════════════════════════════════════════════════════════
+
+Your choice (1, 2, 3, or 'quit'): 1
+
+══════════════════════════════════════════════════════════════════════
 Explore 25 key moments from the life of Jesus Christ:
+══════════════════════════════════════════════════════════════════════
 
 👶 BIRTH & CHILDHOOD:
 1-Angel's Announcement | 2-Birth in Bethlehem | 3-Jesus at Temple
@@ -388,7 +415,9 @@ Explore 25 key moments from the life of Jesus Christ:
 21-Trial | 22-Crucifixion | 23-It Is Finished
 24-Resurrection | 25-Ascension
 
-Enter your choice (1-25) or 'quit' to exit: 1
+══════════════════════════════════════════════════════════════════════
+
+Enter your choice (1-25), 'back' for main menu, or 'quit': 1
 
 ======================================================================
 ✨ Divine Announcement: The Angel Gabriel Announces Jesus' Birth
@@ -411,9 +440,68 @@ God chose a humble young woman to bear the Savior of the world.
 
 💙 May we respond to God's call with the same faith and humility!
 
---- Enter another number or 'quit' to exit! ---
+--- Type another number, 'back' for menu, or 'quit'! ---
 
-Enter your choice (1-25) or 'quit' to exit: quit
+Enter your choice (1-25), 'back' for main menu, or 'quit': back
+
+[Returns to Main Menu]
+
+Your choice (1, 2, 3, or 'quit'): 2
+
+══════════════════════════════════════════════════════════════════════
+📖 THE PARABLES OF JESUS
+══════════════════════════════════════════════════════════════════════
+
+Type a parable to learn more about Jesus' teachings:
+
+1 - Parable of the Sower
+2 - Parable of the Good Samaritan
+3 - Parable of the Prodigal Son
+4 - Parable of the Talents
+5 - Parable of the Mustard Seed
+
+Type 'back' to return to main menu or 'quit' to exit
+══════════════════════════════════════════════════════════════════════
+
+Your choice (1-5), 'back', or 'quit': 3
+
+══════════════════════════════════════════════════════════════════════
+📖 The Parable of the Prodigal Son
+══════════════════════════════════════════════════════════════════════
+
+A son squanders his inheritance but is welcomed back by his father,
+illustrating God's forgiving love and joy over repentance.
+
+👨‍👦 'This son of mine was dead and is alive again;' - Luke 15:24
+
+💡 Reflect: Are you in need of forgiveness or ready to forgive?
+
+--- Type another number, 'back' for menu, or 'quit'! ---
+
+Your choice (1-5), 'back', or 'quit': back
+
+[Returns to Main Menu]
+
+Your choice (1, 2, 3, or 'quit'): 3
+
+══════════════════════════════════════════════════════════════════════
+🔍 SEARCH FOR MOMENTS
+══════════════════════════════════════════════════════════════════════
+
+Enter keyword to search (e.g., 'miracle', 'teaching', 'water'):
+
+Search: miracle
+
+Found 5 moments matching "miracle":
+→ 7: First Miracle – Water into wine at Cana
+→ 10: Feeding 5000 – Miracle of bread and fish
+→ 11: Walking on Water – Jesus walks on the sea
+→ 12: Raising Lazarus – Jesus brings Lazarus back to life
+→ 13: Healing Blind – Jesus restores sight
+
+[User can then select number to view details or return to menu]
+
+Your choice (1, 2, 3, or 'quit'): quit
 
 ✝️ Thank you for exploring the life of Jesus!
 🙏 'I am with you always, to the very end of the age'
