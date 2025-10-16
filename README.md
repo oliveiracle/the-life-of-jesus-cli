@@ -75,11 +75,39 @@ This CLI application was created to provide an accessible, scripture-based explo
   - Visual hierarchy for easy navigation
 
 - **Detailed Moment Information**
+
   - Biblical location and time period
   - Key participants
   - Scripture reference with full verse text
   - Historical and spiritual significance
   - Personal reflection prompts
+
+  #### 🔍 Keyword Search System
+
+- **Search by Keyword**
+
+  - Type any word related to Jesus' life
+  - Case-insensitive matching (works with "MIRACLE" or "miracle")
+  - Returns all relevant moments instantly
+  - Quick navigation to specific content without scrolling
+
+- **Search Examples**
+
+```
+  Search: miracle
+  Results:
+  → 7: First Miracle – Water into wine at Cana
+  → 10: Feeding 5000 – Miracle of bread and fish
+  → 11: Walking on Water – Jesus walks on the sea
+  → 12: Raising Lazarus – Jesus brings Lazarus back to life
+  → 13: Healing Blind – Jesus restores sight
+```
+
+**Technical Implementation:**
+
+- Dictionary-based data structure for efficient searching
+- O(n) search complexity across 25 moments
+- Addresses LO7 (Data Structure Management) assessment criteria
 
 #### 🛡️ Robust Error Handling
 
@@ -696,8 +724,10 @@ This project demonstrates proficiency in the following Code Institute Python Ess
 
 ### LO7: Data Structures
 
-- ✅ **LO7.1**: Lists used for organizing moments by category
-- ✅ **LO7.2**: String manipulation for user input processing
+- ✅ **LO7.1**: Dictionary used for moment storage and search
+- ✅ **LO7.2**: Lists used for organizing moments by category
+- ✅ **LO7.3**: String manipulation for user input processing
+- ✅ **LO7.4**: Efficient data retrieval using dictionary keys
 
 ### LO8: Version Control
 
