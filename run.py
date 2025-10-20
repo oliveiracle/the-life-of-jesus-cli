@@ -2,31 +2,156 @@ import jesus_moments
 
 # Dictionary with all 25 moments titles for search
 moments_data = {
-    1: "Angel's Announcement - Gabriel announces Jesus' birth",
-    2: "Birth in Bethlehem - Jesus is born",
-    3: "Jesus at Temple - Young Jesus teaches at 12 years old",
-    4: "Baptism - Jesus is baptized by John",
-    5: "Temptation - Jesus resists the devil in wilderness",
-    6: "First Disciples - Jesus calls his followers",
-    7: "First Miracle - Water into wine at Cana",
-    8: "Healing Paralytic - Jesus heals and forgives sins",
-    9: "Calming Storm - Jesus commands wind and waves",
-    10: "Feeding 5000 - Miracle of bread and fish",
-    11: "Walking on Water - Jesus walks on the sea",
-    12: "Raising Lazarus - Jesus brings Lazarus back to life",
-    13: "Healing Blind - Jesus restores sight",
-    14: "Sermon on Mount - Jesus teaches the Beatitudes",
-    15: "Prodigal Son - Parable of God's forgiveness",
-    16: "I Am the Way - Jesus declares his divine nature",
-    17: "Greatest Commandment - Love God and love others",
-    18: "Triumphal Entry - Jesus enters Jerusalem",
-    19: "Last Supper - Jesus shares final meal with disciples",
-    20: "Gethsemane - Jesus prays before arrest",
-    21: "Trial - Jesus stands before Pilate",
-    22: "Crucifixion - Jesus dies on the cross",
-    23: "It Is Finished - Jesus' final words",
-    24: "Resurrection - Jesus rises from the dead",
-    25: "Ascension - Jesus returns to heaven"
+    1: {
+        'title': "Angel's Announcement",
+        'location': 'Nazareth, Mary\'s home',
+        'people': ['Angel Gabriel', 'Mary'],
+        'scripture': 'Luke 1:30-31'
+    },
+    2: {
+        'title': "Birth in Bethlehem",
+        'location': 'Bethlehem, in a manger',
+        'people': ['Mary', 'Joseph', 'baby Jesus', 'shepherds', 'angels'],
+        'scripture': 'Luke 2:10-11'
+    },
+    3: {
+        'title': "Jesus at Temple - Young Jesus teaches at 12 years old",
+        'location': 'Jerusalem Temple',
+        'people': ['Jesus (age 12)', 'Mary', 'Joseph', 'teachers of the law'],
+        'scripture': 'Luke 2:46-47'
+    },
+    4: {
+        'title': "Baptism - Jesus is baptized by John",
+        'location': 'Jordan River',
+        'people': ['Jesus', 'John the Baptist'],
+        'scripture': 'Matthew 3:16'
+    },
+    5: {
+        'title': "Temptation - Jesus resists the devil in wilderness",
+        'location': 'Wilderness',
+        'people': ['Jesus', 'the devil'],
+        'scripture': 'Matthew 4:1'
+    },
+    6: {
+        'title': "First Disciples - Jesus calls his followers",
+        'location': 'Near Jordan River',
+        'people': ['Jesus', 'John the Baptist', 'Andrew', 'Simon Peter', 'Philip', 'Nathanael'],
+        'scripture': 'John 1:35-36'
+    },
+    7: {
+        'title': "First Miracle - Water into wine at Cana",
+        'location': 'Cana',
+        'people': ['Jesus', 'Mary', 'servants'],
+        'scripture': 'John 2:7-8'
+    },
+    8: {
+        'title': "Healing Paralytic - Jesus heals and forgives sins",
+        'location': 'Capernaum',
+        'people': ['Jesus', 'paralyzed man', 'friends', 'scribes', 'Pharisees'],
+        'scripture': 'Luke 5:18'
+    },
+    9: {
+        'title': "Calming Storm - Jesus commands wind and waves",
+        'location': 'Sea of Galilee',
+        'people': ['Jesus', 'disciples'],
+        'scripture': 'Matthew 8:23-24'
+    },
+    10: {
+        'title': "Feeding 5000 - Miracle of bread and fish",
+        'location': 'Near Sea of Galilee',
+        'people': ['Jesus', 'disciples', 'crowd of 5000 men'],
+        'scripture': 'Matthew 14:19'
+    },
+    11: {
+        'title': "Walking on Water - Jesus walks on the sea",
+        'location': 'Sea of Galilee',
+        'people': ['Jesus', 'disciples (including Peter)'],
+        'scripture': 'Matthew 14:25-26'
+    },
+    12: {
+        'title': "Raising Lazarus - Jesus brings Lazarus back to life",
+        'location': 'Bethany',
+        'people': ['Jesus', 'Lazarus', 'Mary', 'Martha'],
+        'scripture': 'John 11:43-44'
+    },
+    13: {
+        'title': "Healing Blind - Jesus restores sight",
+        'location': 'Jerusalem',
+        'people': ['Jesus', 'blind man', 'Pharisees'],
+        'scripture': 'John 9:25'
+    },
+    14: {
+        'title': "Sermon on Mount - Jesus teaches the Beatitudes",
+        'location': 'Mountainside near Sea of Galilee',
+        'people': ['Jesus', 'disciples', 'crowds'],
+        'scripture': 'Matthew 5:1-2'
+    },
+    15: {
+        'title': "Prodigal Son - Parable of God's forgiveness",
+        'location': 'Not specified',
+        'people': ['Jesus (teaching)', 'father', 'prodigal son', 'older brother'],
+        'scripture': 'Luke 15:20'
+    },
+    16: {
+        'title': "I Am the Way - Jesus declares his divine nature",
+        'location': 'Upper room in Jerusalem',
+        'people': ['Jesus', 'disciples'],
+        'scripture': 'John 14:6'
+    },
+    17: {
+        'title': "Greatest Commandment - Love God and love others",
+        'location': 'Jerusalem (Temple)',
+        'people': ['Jesus', 'Pharisees'],
+        'scripture': 'Matthew 22:37-38'
+    },
+    18: {
+        'title': "Triumphal Entry - Jesus enters Jerusalem",
+        'location': 'Jerusalem',
+        'people': ['Jesus', 'crowds', 'disciples'],
+        'scripture': 'John 12:12-13'
+    },
+    19: {
+        'title': "Last Supper - Jesus shares final meal with disciples",
+        'location': 'Upper room in Jerusalem',
+        'people': ['Jesus', 'disciples (including Judas)'],
+        'scripture': 'Matthew 26:26'
+    },
+    20: {
+        'title': "Gethsemane - Jesus prays before arrest",
+        'location': 'Garden of Gethsemane',
+        'people': ['Jesus', 'disciples (Peter, James, John)'],
+        'scripture': 'Matthew 26:36'
+    },
+    21: {
+        'title': "Trial - Jesus stands before Pilate",
+        'location': 'Jerusalem (before Sanhedrin, Pilate, Herod)',
+        'people': ['Jesus', 'Pilate', 'Caiaphas', 'Herod Antipas', 'Sanhedrin'],
+        'scripture': 'Matthew 27:1-2'
+    },
+    22: {
+        'title': "Crucifixion - Jesus dies on the cross",
+        'location': 'Golgotha (near Jerusalem)',
+        'people': ['Jesus', 'soldiers', 'criminals', 'crowds'],
+        'scripture': 'Matthew 27:33, 38'
+    },
+    23: {
+        'title': "It Is Finished - Jesus' final words",
+        'location': 'Golgotha (cross)',
+        'people': ['Jesus', 'soldiers'],
+        'scripture': 'John 19:30'
+    },
+    24: {
+        'title': "Resurrection - Jesus rises from the dead",
+        'location': 'Tomb near Jerusalem',
+        'people': ['Jesus', 'Mary Magdalene', 'disciples', 'angels'],
+        'scripture': 'Matthew 28:5-6'
+    },
+    25: {
+        'title': "Ascension - Jesus returns to heaven",
+        'location': 'Near Bethany',
+        'people': ['Jesus', 'disciples'],
+        'scripture': 'Luke 24:51'
+    }
 }
 
 # 1. TITLE
