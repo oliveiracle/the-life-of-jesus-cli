@@ -220,10 +220,16 @@ while True:
             if option.lower() == "back" or option.lower() == "b":
                 break  # Sai do loop dos momentos, volta pro menu principal
             
-            # TRY/EXCEPT
-            if not option.isdigit() or int(option) < 1 or int(option) > 25:
-                print(f"\n❌ '{option}' is not a valid moment number!")
-                print("\n💡 Please choose a number between 1 and 25, type 'back', or 'quit'.")
+            #  TRY/EXCEPT VALIDATION
+            try:
+                option_num = int(option)
+                if option_num < 1 or option_num > 25:
+                    print(f"\n❌ '{option}' is not a valid moment number!")
+                    print("\n💡 Please choose a number between 1 and 25.")
+                    continue
+            except ValueError:
+                print(f"\n❌ '{option}' is not a number!")
+                print("\n💡 Please enter a NUMBER between 1-25, 'back', or 'quit'.")
                 continue
             
             # IF/ELIF DOS MOMENTOS
