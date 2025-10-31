@@ -1240,9 +1240,10 @@ while True:
             
             # Search in moments
             results = []
-            for num, title in moments_data.items():
-                if search_term.lower() in title.lower():
-                    results.append((num, title))
+            for num, moment_dict in moments_data.items():
+                # Busca no título do momento
+                if search_term.lower() in moment_dict['title'].lower():
+                    results.append((num, moment_dict['title']))
             
             # Display results
             if results:
