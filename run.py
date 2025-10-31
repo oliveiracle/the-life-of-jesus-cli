@@ -266,7 +266,7 @@ while True:
                 print(f'   "{mary_response}" - Luke 1:38')
                 print()
                 print("\n🙏 May we respond to God's call with the same faith and humility!")
-                input("\nPress enter to continue....")  # <-- Adicione isso!
+                input("\nPress enter to continue....")  
 
             elif option == "2":
                 moment_name = "The Birth of Jesus Christ"
@@ -831,7 +831,7 @@ while True:
                 print(f'   "{second_command}" - Matthew 22:39')
                 print()
                 print("\n🙏 Love God wholly and others fully!")
-                input("\nPress enter to continue.r...")  
+                input("\nPress enter to continue...")  
 
             elif option == "18":
                 moment_name = "The Triumphal Entry"
