@@ -14,7 +14,7 @@ def show_title():
     """Display the main title of the application with fancy ASCII art"""
     # Generate fancy ASCII art for "JESUS"
     title_art = text2art("JESUS CHRIST", font='standard')
-    
+
     print(Fore.CYAN + title_art)
     print(Fore.YELLOW + "=" * 70)
     print(Fore.CYAN + "         THE LIFE OF JESUS CHRIST CLI".center(60))
