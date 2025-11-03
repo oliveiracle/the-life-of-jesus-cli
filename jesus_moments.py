@@ -2,20 +2,30 @@
 # THE LIFE OF JESUS CHRIST - MOMENTS MODULE
 # ==============================================================================
 # This module contains formatted titles for the 25 key moments
-# in the life of Jesus Christ
+# in the life of Jesus Christ, with enhanced ASCII art using art library
 # ==============================================================================
+
+from art import text2art
+from colorama import Fore, init
+init(autoreset=True)
 
 
 def show_title():
-    """Display the main title of the application"""
-    print("=" * 70)
-    print("✝️  THE LIFE OF JESUS CHRIST CLI")
-    print("=" * 70)
-    print("🙏 'For God so loved the world that He gave His one and only Son,")
+    """Display the main title of the application with fancy ASCII art"""
+    # Generate fancy ASCII art for "JESUS"
+    title_art = text2art("JESUS", font='block')
+    
+    print(Fore.CYAN + title_art)
+    print(Fore.YELLOW + "=" * 70)
+    print(Fore.CYAN + "         THE LIFE OF JESUS CHRIST CLI")
+    print(Fore.YELLOW + "=" * 70)
+    print()
+    print(Fore.YELLOW + "🙏 'For God so loved the world that He gave "
+          "His one and only Son,")
     print("   that whoever believes in Him shall not perish")
     print("   but have eternal life'")
-    print("📖 John 3:16")
-    print("=" * 70)
+    print(Fore.WHITE + "📖 John 3:16")
+    print(Fore.YELLOW + "=" * 70)
     print()
 
 
