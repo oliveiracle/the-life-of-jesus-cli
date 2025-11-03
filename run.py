@@ -1,7 +1,32 @@
 import jesus_moments
 from colorama import Fore, init
+import random  # ← ADICIONAR ESTE!
+
 init(autoreset=True)
 
+# Encouraging verses for exit message
+encouraging_verses = [
+    ("Matthew 28:20", 
+     "I am with you always, to the very end of the age"),
+    ("John 14:27", 
+     "Peace I leave with you; my peace I give you"),
+    ("Philippians 4:13", 
+     "I can do all things through Christ who strengthens me"),
+    ("Joshua 1:9", 
+     "Be strong and courageous. Do not be afraid"),
+    ("Psalm 23:1", 
+     "The Lord is my shepherd, I lack nothing"),
+    ("Romans 8:28", 
+     "All things work together for good to those who love God"),
+    ("Jeremiah 29:11", 
+     "For I know the plans I have for you, declares the Lord"),
+    ("Proverbs 3:5-6", 
+     "Trust in the Lord with all your heart"),
+    ("Isaiah 41:10", 
+     "Do not fear, for I am with you"),
+    ("2 Corinthians 12:9", 
+     "My grace is sufficient for you")
+]
 
 # Dictionary with all 25 moments titles for search
 moments_data = {
@@ -217,13 +242,13 @@ while True:
         "\nYour choice (1, 2, 3, or 'quit'): "
     ).strip()
 
-    # Quit
+    # Quit with random encouraging verse
     if main_choice.lower() in ["quit", "q"]:
+        verse = random.choice(encouraging_verses)
         print(Fore.CYAN + "\n✝ Thank you for exploring the life of "
               "Jesus!")
-        print(Fore.YELLOW + "\n🙏 'I am with you always, to the very "
-              "end of the age'")
-        print(Fore.YELLOW + "   - Matthew 28:20")
+        print(Fore.YELLOW + f"\n🙏 '{verse[1]}'")
+        print(Fore.YELLOW + f"   - {verse[0]}")
         break
 
     # Option 1: The 25 moments
@@ -266,9 +291,10 @@ while True:
 
             # Quit
             if option.lower() in ["quit", "q"]:
+                verse = random.choice(encouraging_verses)
                 print(Fore.CYAN + "\n✝ Thank you for exploring!")
-                print(Fore.YELLOW + "\n🙏 'I am with you always'")
-                print(Fore.YELLOW + "   - Matthew 28:20")
+                print(Fore.YELLOW + f"\n🙏 '{verse[1]}'")
+                print(Fore.YELLOW + f"   - {verse[0]}")
                 exit()
 
             # Back to main menu
@@ -1045,6 +1071,7 @@ while True:
                   "menu! ---")
 
     # Option 2: The Parables
+    # Option 2: The Parables
     elif main_choice == "2":
         while True:
             print("\n" + "=" * 70)
@@ -1065,17 +1092,15 @@ while True:
 
             # Quit
             if parable_choice.lower() in ["quit", "q"]:
-                print(Fore.CYAN + "\n✝ Thank you for exploring "
-                      "the life of Jesus!")
-                print(Fore.YELLOW + "\n🙏 'I am with you always, "
-                      "to the very end of the age'")
-                print(Fore.YELLOW + "   - Matthew 28:20")
+                verse = random.choice(encouraging_verses)
+                print(Fore.CYAN + "\n✝ Thank you for exploring!")
+                print(Fore.YELLOW + f"\n🙏 '{verse[1]}'")
+                print(Fore.YELLOW + f"   - {verse[0]}")
                 exit()
 
             # Back to main menu
             if parable_choice.lower() in ["back", "b"]:
                 break
-
             # Parable 1: Sower
             if parable_choice == "1":
                 print("\n" + "=" * 70)
@@ -1166,6 +1191,7 @@ while True:
                   "'quit'! ---")
 
     # Option 3: Search moments
+    # Option 3: Search moments
     elif main_choice == "3":
         while True:
             print("\n" + "=" * 70)
@@ -1184,19 +1210,17 @@ while True:
 
             # Quit
             if search_term.lower() in ["quit", "q"]:
-                print(Fore.CYAN + "\n✝ Thank you for exploring "
-                      "the life of Jesus!")
-                print(Fore.YELLOW + "\n🙏 'I am with you always, "
-                      "to the very end of the age'")
-                print(Fore.YELLOW + "   - Matthew 28:20")
-                exit()
-
+                verse = random.choice(encouraging_verses)
+                print(Fore.CYAN + "\n✝ Thank you for exploring the life of "
+                      "Jesus!")
+                print(Fore.YELLOW + f"\n🙏 '{verse[1]}'")
+                print(Fore.YELLOW + f"   - {verse[0]}")
+                break
             # Empty search
             if not search_term:
                 print(Fore.RED + "\n❌ Please enter a keyword to "
                       "search!")
                 continue
-
             # Search in moments dictionary
             results = []
             for num, moment_dict in moments_data.items():
