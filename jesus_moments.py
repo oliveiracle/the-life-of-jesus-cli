@@ -13,7 +13,7 @@ init(autoreset=True)
 def show_title():
     """Display the main title of the application with fancy ASCII art"""
     # Generate fancy ASCII art for "JESUS"
-    title_art = text2art("JESUS", font='block')
+    title_art = text2art("JESUS", font='bulbhead', chr_ignore=True)
     
     print(Fore.CYAN + title_art)
     print(Fore.YELLOW + "=" * 70)
