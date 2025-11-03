@@ -1,6 +1,33 @@
+# Python
 __pycache__/
 *.pyc
-.history/
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual Environment
 .venv/
-*.log
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Files
 .DS_Store
+.DS_Store?
+._*
+
+# Development Tools
+.flake8
+.ruff_cache/
+.history/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
