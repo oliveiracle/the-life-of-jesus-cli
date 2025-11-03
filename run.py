@@ -1,30 +1,30 @@
 import jesus_moments
 from colorama import Fore, init
-import random  # 
+import random
 
 init(autoreset=True)
 
 # Encouraging verses for exit message
 encouraging_verses = [
-    ("Matthew 28:20", 
+    ("Matthew 28:20",
      "I am with you always, to the very end of the age"),
-    ("John 14:27", 
+    ("John 14:27",
      "Peace I leave with you; my peace I give you"),
-    ("Philippians 4:13", 
+    ("Philippians 4:13",
      "I can do all things through Christ who strengthens me"),
-    ("Joshua 1:9", 
+    ("Joshua 1:9",
      "Be strong and courageous. Do not be afraid"),
-    ("Psalm 23:1", 
+    ("Psalm 23:1",
      "The Lord is my shepherd, I lack nothing"),
-    ("Romans 8:28", 
+    ("Romans 8:28",
      "All things work together for good to those who love God"),
-    ("Jeremiah 29:11", 
+    ("Jeremiah 29:11",
      "For I know the plans I have for you, declares the Lord"),
-    ("Proverbs 3:5-6", 
+    ("Proverbs 3:5-6",
      "Trust in the Lord with all your heart"),
-    ("Isaiah 41:10", 
+    ("Isaiah 41:10",
      "Do not fear, for I am with you"),
-    ("2 Corinthians 12:9", 
+    ("2 Corinthians 12:9",
      "My grace is sufficient for you")
 ]
 
