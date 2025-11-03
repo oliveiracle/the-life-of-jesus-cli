@@ -1,6 +1,6 @@
 import jesus_moments
 from colorama import Fore, init
-import random  # ← ADICIONAR ESTE!
+import random  # 
 
 init(autoreset=True)
 
@@ -229,7 +229,7 @@ jesus_moments.show_title()
 while True:
     # Main menu
     print("\n" + "=" * 70)
-    print(Fore.CYAN + "\n✝\n  MAIN MENU - THE LIFE OF JESUS")
+    print(Fore.CYAN + "\n✝\n  MAIN MENU - THE LIFE OF JESUS".center(60))
     print("=" * 70)
     print("\n📖 What would you like to explore?\n")
     print("1 - The 25 Key Moments of Jesus' Life")
