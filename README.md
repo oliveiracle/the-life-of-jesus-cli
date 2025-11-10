@@ -764,7 +764,7 @@ None identified during testing phase.
 
 ### 🌐 **Live Deployment**
 
-**🔗 Heroku Application:** https://the-life-of-jesus-cli-e885a64d4490.herokuapp.com/
+**🔗 Heroku Application:** https://the-life-of-jesus-v2-45522819b886.herokuapp.com/
 
 ---
 
